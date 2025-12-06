@@ -1,0 +1,22 @@
+$nomention
+$botListHide
+$onlyForIDs[1235135453179547750;]
+
+$c[BotList.me]
+$httpAddHeader[Authorization;$getVar[botListMeKey]]
+$httpPost[https://api.botlist.me/api/v1/bots/$botID/stats;{
+ "server_count": "$numberSeparator[$serverCount]"}]
+
+$c[Top.gg]
+$httpAddHeader[Authorization;$getVar[topKey]]
+$httpPost[https://top.gg/api/bots/$botID/stats;{
+ "server_count": $serverCount}]
+
+$c[Discord Bot List] 
+$httpAddHeader[Authorization;$getVar[discordBotListKey]]
+$httpPost[https://discordbotlist.com/api/v1/bots/$botID/stats;{
+ "guilds": $serverCount}]
+
+
+**$username**, 
+I have successfully posted your bot's server count. 

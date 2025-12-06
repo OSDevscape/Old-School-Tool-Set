@@ -1,0 +1,45 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+
+$c[This command can only be used by Members.]
+$onlyForRoles[Member;:x: You need to be a Member to use this]
+
+$c[API Call]
+$httpGet[https://api.wiseoldman.net/v2/players/$getVar[RSN;$authorID]] 
+
+$c[Footer]
+$thumbnail[$userAvatar[$authorID]]
+$footer[$addTimestamp]
+$color[$getRoleColor[$highestRole[$authorID]]]
+
+$c[Body]
+$title[__**$httpResult[displayName]**__'s
+ Profile]
+$description[> **Build**: $httpResult[build]
+> **Type**: $httpResult[type]
+> **ID**: $httpResult[id]
+
+<:Stats_icon:1426867260483702884> __**Totals**__
+> Level: $numberSeparator[$httpResult[latestSnapshot;data;skills;overall;level];,]
+> XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;overall;experience];,]
+
+
+
+## Stats 
+─────────────────────────
+📊 **Level**: $getVar[level;$authorID]
+
+🪙 **GP**: $getVar[🪙;$authorID]
+🏦 **Bank Value**: $getVar[🏦;$authorID]
+
+☠️ **Completed Tasks**: $getVar[SlayerTasksCompleted;$authorID]
+💀 **Slayer Points**: $getVar[💀;$authorID] 
+─────────────────────────
+]

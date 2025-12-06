@@ -1,0 +1,27 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$botListHide
+
+$if[$customID==bugs]
+$nomention
+$ephemeral
+$newModal[bug1;Submit a Bug 🐛]
+$addTextInput[Bug;paragraph;Bug;1;500;true; ;Please include a description of the error, steps to recreate the error & a message link to the error]
+$endif
+
+$if[$customID==bug1]
+$nomention
+$channelSendMessage[$getServerVar[bugs];<@&1403456130943946933>]
+$sendEmbedMessage[$getServerVar[bugs];;New Bug!;;Author Name: $username
+Author Nickname: $nickname
+
+Suggestion: $input[Bug]
+
+Their ID: $authorID;A1D485;;;;;$authorAvatar;;no;no]
+$endif

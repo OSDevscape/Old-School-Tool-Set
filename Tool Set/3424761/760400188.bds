@@ -1,0 +1,30 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+$nomention 
+
+$c[API Call]
+$httpGet[https://api.wiseoldman.net/v2/groups/$getVar[ClanID]]
+
+
+$c[Footer]
+$thumbnail[$serverIcon]
+$footer[$addTimestamp]
+$color[#D8A63B]
+
+$c[Body]
+$title[Clan Information;1]
+$description[Clan Name: $httpResult[name]
+ID: $httpResult[id]
+Homeworld: $httpResult[homeworld]
+Chat Chat: Bonded4Life 
+
+Member Count: $httpResult[memberCount]
+
+;1]
+
+

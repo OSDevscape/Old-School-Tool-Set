@@ -1,0 +1,20 @@
+$nomention $enableDecimals[false]
+
+$c[data]
+ $var[value;$getVar[currentxp;$authorID]] $var[max_value;$getVar[nextlevelxp;$authorID]]
+$c[config]
+ $var[blank;:black_large_square:] $var[filled;:brown_square:] $var[bar_length;10] $c[:bangbang: "bar_length" can not be more than 10]
+
+$c[progress-bar-generator]
+ $var[percent;$calculate[($var[value]*100)/$var[max_value]]]
+ $var[bar;$replaceText[$repeatMessage[$var[bar_length];$var[blank]];$var[blank];$var[filled];$round[$divide[$multi[$var[percent];$var[bar_length]];100]]]]
+
+$title[$nickname[$authorID]'s Chat Rank]
+$description[
+You are **$var[percent]%** through level **$getVar[level;$authorID]**
+
+ **$var[bar]**
+]
+
+$thumbnail[$userAvatar[$authorID]]
+$color[$getRoleColor[$highestRole[$authorID]]]

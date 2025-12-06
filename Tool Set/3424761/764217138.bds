@@ -1,0 +1,13 @@
+$onlyAdmin[> I do apologize, but unfortunately Admin are the only one able to use this command.]
+
+$botListHide
+
+$nomention
+$argsCheck[>1;Usage .set-footmsg <message>]
+
+$setServerVar[footmsg;$message]
+
+$title[$username]
+$description[
+✅ The Footer Has Been Set To 
+`$message`] 

@@ -1,0 +1,16 @@
+$nomention
+$reply
+$suppressErrors
+$onlyIf[$isNumber[$message[1]]==true;]
+$onlyForChannels[1434716906522411058;]
+$textSplit[$getServerVar[count];-]
+$if[$splitText[2]==$authorID]
+<@$authorID> RUINED IT AT **$splitText[1]**!! Next number is **1**. **You can't count two numbers in a row.**
+$setServerVar[count;1]
+$elseif[$sum[$splitText[1];1]==$message[1]]
+$setServerVar[count;$message[1]-$authorID]
+$addCmdReactions[✅]
+$else
+<@$authorID> RUINED IT AT **$splitText[1]**!! Next number is **1**. **Wrong number.**
+$setServerVar[count;0]
+$endif

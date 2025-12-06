@@ -1,0 +1,33 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$onlyForIDs[$serverOwner;$botOwnerID;you need to be the Owner of the server to use this.]
+
+
+$nomention
+$title[Welcome $username[$serverOwner]]
+$description[
+This is a guide to setting up the Bot in your server. 
+]
+
+$addField[__**Welcome Msg Setup**__;
+• .set-thumbnail
+• .set-welmsg
+• .set-welcolor
+• .set-welchan
+• .set-footmsg;yes;1]
+
+$addField[__**Farewell Msg Setup**__;
+• .set-faremsg
+• .set-farecolor
+• .set-farechan;yes;1]
+
+$addField[__**Clan Setup**__;
+• .clanid;no;1]
+
+

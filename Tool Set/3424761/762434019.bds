@@ -1,0 +1,23 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+$setVar[currentxp;$sum[$getVar[currentxp;$authorID];$random[1;9]];$authorID]
+
+$if[$getVar[currentxp;$authorID]>=$getVar[nextlevelxp;$authorID]]
+$setVar[rank;$sum[$getVar[rank;$authorID];1];$authorID]
+$setVar[nextlevelxp;$sum[$getVar[nextlevelxp;$authorID];100];$authorID]
+$setVar[level;$sum[$getVar[level;$authorID];1];$authorID]
+$setVar[currentxp;0;$authorID]
+
+$color[$getRoleColor[$highestRole[$authorID]]]
+$description[
+**❗__Hey <@$authorID>, you have reached level $sum[$getVar[level;$authorID];1]__❗**
+]
+$deleteIn[15s]
+$endif

@@ -1,0 +1,18 @@
+$nomention
+$onlyAdmin[> I do apologize, but unfortunately Admin are the only one able to use this command.]
+
+$var[embed_color;$getServerVar[color]]
+$deletecommand
+
+
+$title[Next SotW Choices]
+$description[$message]
+$footer[Asked by $nickname[$authorID]]
+$thumbnail[https://gyazo.com/b97a1c6ec6b08c3a180e5a802ecb9332.png]
+$color[$var[embed_color]]
+
+$addButton[no;skill1-0-0-0-0-0;1️⃣ 0%;danger]
+$addButton[no;skill2-0-0-0-0-0;2️⃣ 0%;danger]
+$addButton[no;skill3-0-0-0-0-0;3️⃣ 0%;danger]
+$addButton[no;skill4-0-0-0-0-0;4️⃣ 0%;danger]
+$addButton[no;votes;0 votes;secondary;yes]

@@ -1,0 +1,11 @@
+$nomention
+$botListHide
+
+$onlyForIDs[1235135453179547750;]
+$httpAddHeader[Authorization;$getVar[topKey]]
+
+$httpPost[https://top.gg/api/bots/$botID/stats;{
+ "server_count": $serverCount}]
+
+**$username**, 
+I have successfully posted your bot's server count on top.gg.

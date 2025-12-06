@@ -1,0 +1,21 @@
+$nomention
+
+## __**Logs**__
+> Oak Log: $getUserVar[item-Oak_Log]
+> Willow Log: $getUserVar[item-Willow_Log]
+> Teak Log: $getUserVar[item-Teak_Log]
+> Maple Log: $getUserVar[item-Maple_Log]
+> Mahogany Log: $getUserVar[item-Mahogany_Log]
+> Yew Log: $getUserVar[item-Yew_Log]
+> Magic Log: $getUserVar[item-Magic_Log]
+> Redwood Log: $getUserVar[item-Redwood_Log]
+
+## __**Ores**__
+> Copper Ore: $getUserVar[item-Copper_Ore]
+> Tin Ore: $getUserVar[item-Tin_Ore]
+> Silver Ore: $getUserVar[item-Silver_Ore]
+> Coal: $getUserVar[item-Coal]
+> Gold Ore: $getUserVar[item-Gold_Ore]
+> Mithril Ore: $getUserVar[item-Mithril_Ore]
+> Adamantite Ore: $getUserVar[item-Adamantite_Ore]
+> Runite Ore: $getUserVar[item-Runite_Ore]

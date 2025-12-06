@@ -1,0 +1,11 @@
+$nomention
+
+$title[$nickname[$authorID]'s ATM]
+$description[This is you account balance]
+
+$addField[__**GP**__;$numberSeparator[$getVar[🪙;$authorID];,];yes;1]
+$addField[__**Bank**__;$numberSeparator[$getVar[🏦;$authorID];,];yes;1]
+
+
+$thumbnail[https://gyazo.com/ae2e2705841497bec6e96398da9f4513.png;1]
+$color[#4fc3f7;1]

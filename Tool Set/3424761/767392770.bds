@@ -1,0 +1,14 @@
+$nomention
+$botListHide
+
+$onlyForIDs[1235135453179547750;]
+$httpAddHeader[Authorization;$getVar[discordBotListKey]]
+
+
+$httpPost[https://discordbotlist.com/api/v1/bots/$botID/stats;{
+ "guilds": $serverCount}]
+
+
+**$username**, 
+I have successfully posted your bot's server count on Discord Bot List.
+

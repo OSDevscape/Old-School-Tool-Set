@@ -1,0 +1,12 @@
+$onlyAdmin[> I do apologize, but unfortunately Admin are the only one able to use this command.]
+
+$botListHide
+
+$nomention
+$argsCheck[>1;Usage .set-welchan <MentionChannnel>]
+
+$setServerVar[welchan;$mentionedChannels[<]]
+
+$title[$username]
+$description[
+✅ Welcome Message Will Be Sent In <#$mentionedChannels[<]>] 

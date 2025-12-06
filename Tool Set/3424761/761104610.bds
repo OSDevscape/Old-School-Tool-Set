@@ -1,0 +1,112 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+
+$title[Help Menu]
+$description[This Help Menu is based on your roles.....
+Cmds are only visible up to your highest role.]
+
+$if[$hasRole[$authorID;1399092953498255460]]
+ $addField[__**Owner Cmds**__;**```
+/approval
+/clanid
+/tidy 
+.swinner 
+.resetuser
+.addBankCash
+.removeBankCash
+.addPocketCash
+.removePocketCash
+ ```**;false;1]
+
+$c[Footer]
+    $thumbnail[$serverIcon]
+    $footer[This is only a test! ]
+    $color[$getRoleColor[$highestRole[$authorID]]]
+
+     $endif
+
+ $if[$hasRole[$authorID;1399093247464181781]==true]
+    $addField[__**Deputy Owners Cmds**__ ;**```
+/approval
+/tidy 
+.swinner 
+.resetuser
+.addBankCash
+.removeBankCash
+.addPocketCash
+.removePocketCash
+.swinner
+ ```**;false;1]
+
+$c[Footer]
+    $thumbnail[$serverIcon]
+    $footer[This is only a test! ]
+    $color[$getRoleColor[$highestRole[$authorID]]]
+     $endif
+
+$if[$hasRole[$authorID;1399096694427226122]==true]
+    $addField[__**Cabinet Cmds**__;**```
+/approval
+/clanid
+/tidy 
+.swinner 
+ ```**;false;1]
+
+$c[Footer]
+    $thumbnail[$serverIcon]
+    $footer[This is only a test! ]
+    $color[$getRoleColor[$highestRole[$authorID]]]
+
+     $endif
+
+$if[$hasRole[$authorID;1399093446748405881]==true]
+    $addField[__**OSTS Cmds**__;**```
+/lvls 
+/profile  
+/rank 
+/stats 
+/uptime 
+/slayer 
+!entry
+!dep
+!wd
+!task
+!lb
+!level
+!botinfo
+!rob
+!slots
+ ```**;false;1]
+ 
+$c[Footer]
+    $thumbnail[$serverIcon]
+    $footer[This is only a test! ]
+    $color[$getRoleColor[$highestRole[$authorID]]]
+
+    $endif
+
+
+
+$if[$hasRole[$authorID;1399139265723764776]==true]
+    $addField[__**Guest Limited Access**__
+__**OSTS Cmds**__;**```
+/about
+/clan
+/help
+/rsn        
+/wiki
+ ```**;false;1]
+ 
+$c[Footer]
+    $thumbnail[$serverIcon]
+    $footer[This is only a test! ]
+    $color[$getRoleColor[$highestRole[$authorID]]]
+
+    $endif

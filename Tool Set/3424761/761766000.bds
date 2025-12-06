@@ -1,0 +1,55 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$setServerVar[messageID;$messageID]
+$setServerVar[channelID;$channelID]
+
+$nomention
+
+$c[This command can only be used by Members.]
+$onlyForRoles[Member;:x: You need to be a Member to use this]
+
+
+$title[$nickname[$authorID], ]
+$description[Welcome to the __**Slayer Diaries**__.
+
+__**Foreword**__  
+This Codex has been entrusted to you by the Slayer Masters of Gielinor.  
+Within its pages lie the knowledge and records of every creature worthy of the hunt.  
+Guard it well, for it is both a guide and a chronicle of your growing legend.
+
+*— By Duradel, Slayer Master of Shilo Village*
+]
+
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+
+$newSelectMenu[Compendium;1;1;Open the Compendium... ]
+$addSelectMenuOption[Compendium;Foreword;Foreword;A message from Duradel ]
+$addSelectMenuOption[Compendium;About;About;About Slayer Diaries. ]
+$addSelectMenuOption[Compendium;Usage;Usage;How to use the Codex. ]
+$addSelectMenuOption[Compendium;Task Weight;taskWeight;An explanation of Task Weight]
+
+
+$if[$message[bestiary]==true]
+$newSelectMenu[Bestiary;1;1;Open the Bestiary... ]
+$addSelectMenuOption[Bestiary;📜 Ch. I;Bestiary-p1;The Abyssal & Accursed]
+$addSelectMenuOption[Bestiary;📜 Ch. II;Bestiary-p2;Wings & Wails]
+$addSelectMenuOption[Bestiary;📜 Ch. III;Bestiary-p3;Serpents, Fangs & Furs]
+$addSelectMenuOption[Bestiary;📜 Ch. IV;Bestiary-p4;Feather & Shadow]
+$addSelectMenuOption[Bestiary;📜 Ch. V;Bestiary-p5;Vermin & Flame]
+$addSelectMenuOption[Bestiary;📜 Ch. VI;Bestiary-p6;Scales & Sand]
+$addSelectMenuOption[Bestiary;📜 Ch. VII;Bestiary-p7;Shades & Shadows]
+$addSelectMenuOption[Bestiary;📜 Ch. VIII;Bestiary-p8;Webs & Smoke]
+$addSelectMenuOption[Bestiary;📜 Ch. IX;Bestiary-p9;Frost & Fury]
+$addSelectMenuOption[Bestiary;📜 Ch. X;Bestiary-p10;Flame & Mutation]
+$addSelectMenuOption[Bestiary;📜 Ch. XI;Bestiary-p11;Fang & Rot]
+$endif
+
+$addButton[no;CloseSD;Close Book;danger;;📔;]

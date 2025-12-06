@@ -1,0 +1,11 @@
+$nomention
+$botListHide
+
+$onlyForIDs[1235135453179547750;]
+$httpAddHeader[Authorization;$getVar[botListMeKey]]
+
+$httpPost[https://api.botlist.me/api/v1/bots/$botID/stats;{
+ "server_count": "$numberSeparator[$serverCount]"}]
+
+**$username**, 
+I have successfully posted your bot's server count on BotList.me.

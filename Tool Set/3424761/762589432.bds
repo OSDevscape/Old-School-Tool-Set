@@ -1,0 +1,74 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+
+$c[This command can only be used by Members.]
+$onlyForRoles[Member;:x: You need to be a Member to use this]
+
+
+$if[$isSlash==false]
+$c[Task Completion]
+$setVar[SlayerTasksCompleted;$sum[$getVar[SlayerTasksCompleted;$authorID];1];$authorID]
+
+$c[GP]
+$setVar[🪙;$sum[$getVar[🪙;$authorID];$random[100;250]];$authorID]
+
+$c[Slayer Points]
+$setVar[💀;$sum[$getVar[💀;$authorID];$random[1;5]];$authorID]
+
+
+$title[Task Completed]
+$description[### You have completed $randomText[Turael;Spria;Mazchna;Vannaka;Chaeldar;Konar;Nieve;Steve;Duradel]'s task! 
+Killing $random[100;250] $randomText[Abyssal Demon; Aberrant Spectre; Ankou; Basilisk; Banshee; Bat; Bear; Bird; Black Demon; Black Dragon; Bloodveld; Blue Dragon; Boss tasks; Brine Rat; Bronze Dragon; Cave Bug; Cave Crawler; Cave Horror; Cave Kraken; Cockatrice; Cow; Crawling Hand; Crocodile; Dagannoth; Dark Beast; Desert Lizard; Dog; Dust Devil; Dwarf; Elf; Fire Giants; Fungal Mage; Gargoyle; Ghost; Goblin; Greater Demon; Green Dragon; Harpie Bug Swarm; Hellhound; Hobgoblin; Icefiend; Ice Giant; Ice Troll; Infernal Mage; Iron Dragon; Jelly; Kalphite; Killerwatt; Kurask; Lizardman; Mogre; Monkey; Moss Giant; Mountain Troll; Mutated Zygomite; Nechryael; Ogre; Pyrefiend; Red Dragon; Rockslug; Rune Dragon; Scabarite; Sea Snake; Shadow Warrior; Skeletal Wyvern; Smoke Devil; Spiritual Mage; Spiritual Ranger; Spiritual Warrior; Steel Dragon; Suqah; Troll; Turoth; Vampyre; Wall Beast; Warped Jelly; Waterfiend; Werewolf; Wyvern; Zombie]. 
+
+You have gained **$random[1;5] Slayer Points** & have received a reward of **$random[100;250]gp**.
+
+**Good luck on your next task!**]
+
+
+$c[Footer]
+$thumbnail[https://gyazo.com/11a070664184fd5708ad3b0d1c364353.png]
+$footer[$addTimestamp]
+$footerIcon[https://gyazo.com/fc15153b49cdab6d7e7d00824b7e5f14.jpeg]
+$color[#A52A2A]
+$deleteIn[30s]
+
+$cooldown[60m;> You may come back in %time% to receive your next task. ]
+$endif
+
+
+$if[$isSlash==true]
+$c[Task Completion]
+$setVar[SlayerTasksCompleted;$sum[$getVar[SlayerTasksCompleted;$authorID];1];$authorID]
+
+$c[GP]
+$setVar[🪙;$sum[$getVar[🪙;$authorID];$random[100;250]];$authorID]
+
+$c[Slayer Points]
+$setVar[💀;$sum[$getVar[💀;$authorID];$random[1;5]];$authorID]
+
+
+$title[Task Completed]
+$description[### You have completed $randomText[Turael;Spria;Mazchna;Vannaka;Chaeldar;Konar;Nieve;Steve;Duradel]'s task! 
+Killing $random[100;250] $randomText[Abyssal Demon; Aberrant Spectre; Ankou; Basilisk; Banshee; Bat; Bear; Bird; Black Demon; Black Dragon; Bloodveld; Blue Dragon; Boss tasks; Brine Rat; Bronze Dragon; Cave Bug; Cave Crawler; Cave Horror; Cave Kraken; Cockatrice; Cow; Crawling Hand; Crocodile; Dagannoth; Dark Beast; Desert Lizard; Dog; Dust Devil; Dwarf; Elf; Fire Giants; Fungal Mage; Gargoyle; Ghost; Goblin; Greater Demon; Green Dragon; Harpie Bug Swarm; Hellhound; Hobgoblin; Icefiend; Ice Giant; Ice Troll; Infernal Mage; Iron Dragon; Jelly; Kalphite; Killerwatt; Kurask; Lizardman; Mogre; Monkey; Moss Giant; Mountain Troll; Mutated Zygomite; Nechryael; Ogre; Pyrefiend; Red Dragon; Rockslug; Rune Dragon; Scabarite; Sea Snake; Shadow Warrior; Skeletal Wyvern; Smoke Devil; Spiritual Mage; Spiritual Ranger; Spiritual Warrior; Steel Dragon; Suqah; Troll; Turoth; Vampyre; Wall Beast; Warped Jelly; Waterfiend; Werewolf; Wyvern; Zombie]. 
+
+You have gained **$random[1;5] Slayer Points** & have received a reward of **$random[100;250]gp**.
+
+**Good luck on your next task!**]
+
+
+$c[Footer]
+$thumbnail[https://gyazo.com/11a070664184fd5708ad3b0d1c364353.png]
+$footer[$addTimestamp]
+$footerIcon[https://gyazo.com/fc15153b49cdab6d7e7d00824b7e5f14.jpeg]
+$color[#A52A2A]
+$deleteIn[30s]
+
+$cooldown[60m;> You may come back in %time% to receive your next task. ]
+$endif

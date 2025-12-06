@@ -1,0 +1,24 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention 
+$onlyAdmin[$username, you don't have the perms to use this. ]
+
+<@$mentioned[1;false]>
+$title[Winner Winner, Chicken Dinner]
+$description[
+Congratulations $nickname[$mentioned[1;no]]
+
+You have won this week's **SotW**!!! 
+]
+
+$c[Footer]
+$thumbnail[$userAvatar[$mentioned[1;false]]]
+$footer[$addTimestamp]
+$color[#D8A63B]
+$deletecommand

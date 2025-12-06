@@ -1,0 +1,13 @@
+$nomention
+
+$c[Oak Log]
+$if[$message[1]==Oak]
+$setUserVar[item-Oak_Log;$sub[$getUserVar[item-Oak_Log;$authorID];$message[2]];$authorID]
+
+$c[GP]
+$setVar[🪙;$sum[$multi[$getVar[price-Oak_Log;$authorID];$message[2]];$authorID]]
+$endif
+
+
+> Successfully sold 
+

@@ -1,0 +1,29 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+
+$nomention
+$suppressErrors[This user currently has no tags.]
+$jsonParse[$getUserVar[tags;$botID]]
+$channelSendMessage[$dmChannelID[$authorID];
+$if[$json[tag1]!=null] - ?$json[tag1] $endif
+$if[$json[tag2]!=null] - ?$json[tag2] $endif
+$if[$json[tag3]!=null] - ?$json[tag3] $endif
+$if[$json[tag4]!=null] - ?$json[tag4] $endif
+$if[$json[tag5]!=null] - ?$json[tag5] $endif
+$if[$json[tag6]!=null] - ?$json[tag6] $endif
+$if[$json[tag7]!=null] - ?$json[tag7] $endif
+$if[$json[tag8]!=null] - ?$json[tag8] $endif
+$if[$json[tag9]!=null] - ?$json[tag9] $endif
+$if[$json[tag10]!=null] - ?$json[tag10] $endif
+$if[$json[tag11]!=null] - ?$json[tag11] $endif
+$if[$json[tag12]!=null] - ?$json[tag12] $endif
+$if[$json[tag13]!=null] - ?$json[tag13] $endif
+$if[$json[tag14]!=null] - ?$json[tag14] $endif
+$if[$json[tag15]!=null] - ?$json[tag15] $endif]
+$sendMessage[Tag list have been sent in your dms.]

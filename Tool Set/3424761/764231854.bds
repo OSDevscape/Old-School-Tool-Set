@@ -1,0 +1,12 @@
+$onlyAdmin[> I do apologize, but unfortunately Admin are the only one able to use this command.]
+
+$botListHide
+
+$nomention
+$argsCheck[>1;Usage .set-welmsg <message>]
+
+$setServerVar[welcomemsg;$message]
+
+$title[$username]
+$description[
+✅ Your Welcome Message Has Been Set!]  

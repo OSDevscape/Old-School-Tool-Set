@@ -1,0 +1,48 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+
+$c[This command can only be used by Members.]
+$onlyForRoles[Member;:x: You need to be a Member to use this]
+
+$reply
+ 
+$c[Check Variables]
+      $varExistError[🏦;**⚠️Variable needed, Name : `🏦` , Value : `0`**]
+       $varExistError[🪙;**⚠️Variable needed, Name : `🪙`, Value : `500`**] 
+
+$varExistError[🎫;**⚠️Variable needed, Name : `🎫`, Value : `0`**]
+       
+$c[Limiters]
+ 
+     $onlyIf[$guildID!=;]
+       $onlyIf[$noMentionMessage!=;**⚠️Provide an amount to deposit**]
+        $onlyIf[$isNumber[$noMentionMessage]==true;**⚠️Invalid number or usage**]
+         $onlyIf[$checkContains[$noMentionMessage;-;.]!=true;**⚠️Invalid number or usage**]
+          $onlyIf[$getVar[🪙;$authorID]>=$noMentionMessage;**⚠️You don't have that much money in your pocket**]
+   
+$c[Message to user]
+     
+     $title[✅ Success]
+     $description[You have deposited **$numberSeparator[$noMentionMessage;,]gp**.]
+     $addTimestamp
+$color[#B08D57]
+$footer[Bank of Gielinor]
+    
+ 
+$c[Variables Changes]
+    
+    $setVar[🪙;$sub[$getVar[🪙;$authorID];$noMentionMessage];$authorID]
+    $setVar[🏦;$sum[$getVar[🏦;$authorID];$noMentionMessage];$authorID]
+
+
+$author[$username[$authorID]]
+$thumbnail[https://gyazo.com/57197a52eb0ccb049bedcabb5d69ab7a.png]
+$ignoreTriggerCase
+$deleteIn[15s]

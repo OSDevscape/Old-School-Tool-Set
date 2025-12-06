@@ -1,0 +1,12 @@
+$onlyAdmin[> I do apologize, but unfortunately Admin are the only one able to use this command.]
+
+$botListHide
+
+$nomention
+$argsCheck[>1;Usage .set-welcolor <#hexCode>]
+
+$setServerVar[welcolor;$message]
+
+$title[$username]
+$description[
+✅ Welcome Color Has Been Set To `$message`]

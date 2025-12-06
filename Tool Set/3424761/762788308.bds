@@ -1,0 +1,50 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+$argsCheck[>1;Please enter a number to add to slots!]
+$color[$random[00000;99999]]
+$globalCooldown[10s;Please wait %time%]
+ 
+$onlyIf[$message<=$getVar[🪙;$authorID];You don’t have that much in your balance!]
+$onlyIf[$isNumber[$message]==true;It seems as if **$message** is not a valid number!]
+$onlyIf[$message>=1;Your amount should not be under 1!]
+ 
+$optOff[
+$var[slot1;$randomText[🍉🍊🍋;🍋🍊🍉;🍊🍋🍓]]
+$var[slot2;$randomText[🍊🍉🍋;🍊🍋🍉;🍓🍊🍉]]
+$var[slot3;$randomText[🍉🍓🍓;🍋🍊🍓;🍊🍋🍉]]
+$var[earnings;$randomText[0;0;0;0;0;2;2;2;3]]
+$var[full;$randomText[🍋🍋🍋;🍊🍊🍊;🍉🍉🍉;🍓🍓🍓]]
+]
+ 
+$if[$var[earnings]==0] $setVar[🪙;$sub[$getVar[🪙;$authorID];$message];$authorID]$var[space;
+》$var[satır1]《
+》$var[satır2]《 Lost -$message coins
+》$var[satır3]《] $endif
+ 
+$if[$var[earnings]==2] $setVar[🪙;$sum[$getVar[🪙;$authorID];$message];$authorID] $var[space;
+》$var[slot1]《
+》$var[full]《 Miniature Win +$message coins
+》$var[slot3]《] $endif
+ 
+$if[$var[earnings]==3] $setVar[🪙;$sum[$getVar[🪙;$authorID];$multi[$message;2]];$authorID] $var[space;
+》$var[full]《
+》$var[full]《 MASSIVE WIN +$multi[$message;2]
+》$var[full]《] $endif
+ 
+$author[Slots!]
+$authorIcon[$userAvatar[$authorID]]
+$description[]
+ 
+ 
+ 
+$addField[Spun!..;
+$var[space]]
+ 
+$addTimestamp

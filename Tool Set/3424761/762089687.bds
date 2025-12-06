@@ -1,0 +1,359 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+$if[$message==Bestiary-p1]
+$title[📜 Chapter I]
+$description[**__The Abyssal & Accursed__**
+═════ 💀 ─── 💀 ═════
+
+- 🟢 Aberrant spectre
+  - 🟣 Deviant spectre
+  - 🔺 Abhorrent spectre
+  - 🔺 Repugnant spectre
+
+- 🟢 Abyssal demon
+  - 👑 Abyssal Sire
+  - 🔺 Greater abyssal demon
+
+- 🟢 Adamant dragon
+
+- 🟢 Ankou
+
+- 🟢 Araxyte
+  - 🟣 Araxxor
+  - 🔺 Dreadborn Araxyte
+
+═⋇═⋇═⋇═⋇═ ❧ ═⋇═⋇═⋇═⋇═
+]
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+$endif
+
+
+$if[$message==Bestiary-p2]
+$title[📜 Chapter II]
+$description[### ___Wings & Wails__
+═════ 💀 ─── 💀 ═════
+
+- 🟢 Aviansie
+  - 🟣 Kree'arra
+  - 🟣 Flight Kilisa
+  - 🟣 Flockleader Geerin
+  - 🟣 Wingman Skree
+
+- 🟢 Bandit
+  - 🟣 Black Heather
+  - 🟣 Speedy Keith
+  - 🟣 Donny the Lad
+
+- 🟢 Banshee
+  - 🟣 Twisted Banshee
+  - 🔺 Screaming Banshee
+  - 🔺 Screaming Twisted Banshee
+
+═⋇═⋇═⋇═⋇═ ❧ ═⋇═⋇═⋇═⋇═
+]
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+$endif
+
+
+$if[$message==Bestiary-p3]
+$title[📜 Chapter III]
+$description[### __Serpents, Fangs & Furs__
+═════ 💀 ─── 💀 ═════
+
+- 🟢 Basilisk
+  - 🟣 Basilisk Knights
+  - 🔺 Monstrous Basilisk
+  - 🔺 Basilisk Sentinel
+
+- 🟢 Bat
+  - 🟣 Giant Bat
+  - 🟣 Albino Bat
+  - 🟣 Deathwing
+
+- 🟢 Bears
+  - 🟣 Black Bear
+  - 🟣 Grizzly Bear
+  - 🟣 Grizzly Bear Cub
+  - 🟣 Callisto
+  - 🟣 Artio
+
+═⋇═⋇═⋇═⋇═ ❧ ═⋇═⋇═⋇═⋇═
+]
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+$endif
+
+
+$if[$message==Bestiary-p4]
+$title[📜 Chapter IV]
+$description[### __Feather & Shadow__
+═════ 💀 ─── 💀 ═════
+
+🟢 Bird
+  - 🟣 Chicken
+  - 🟣 Mounted Terrorbird Gnome
+  - 🟣 Rooster
+  - 🟣 Seagull
+  - 🟣 Terrorbird
+  - 🟣 Vulture
+  - 🟣 Undead Chicken
+  - 🟣 Chompy Bird
+
+🟢 Black demon
+  - 🟣 Demonic Gorilla
+  - 🟣 Balfrug Kreeyath
+  - 🟣 Porazdir
+  - 👑 Skotizo
+
+
+═⋇═⋇═⋇═⋇═ ❧ ═⋇═⋇═⋇═⋇═
+]
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+$endif
+
+
+$if[$message==Bestiary-p5]
+$title[📜 Chapter V]
+$description[### __Vermin & Flame__
+═════ 💀 ─── 💀 ═════
+
+🟢 Rat
+  - 🟣 Giant Rat
+  - 🟣 Dungeon Rat
+  - 🟣 Crypt Rat
+  - 🟣 Brine Rat
+  - 🟣 Hell-Rat Behemoth
+  - 👑 Scurrius
+
+🟢 Red dragon
+  - 🟣 Baby Red Dragons
+  - 🟣 Brutal Red Dragons
+
+🟢 Revenant
+
+🟢 Rockslug
+  - 🔺 Giant Rockslug
+
+═⋇═⋇═⋇═⋇═ ❧ ═⋇═⋇═⋇═⋇═
+]
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+$endif
+
+
+$if[$message==Bestiary-p6]
+$title[📜 Chapter VI]
+$description[### __Scales & Sand__
+═════ 💀 ─── 💀 ═════
+
+🟢 Rogue
+
+🟢 Rune Dragon
+
+🟢 Scabarite
+  - 🟣 Locust Riders
+  - 🟣 Scarab Mages
+  - 🟣 Scarab Swarms
+  - 🟣 Small Scarabs
+
+🟢 Scorpion
+  - 🟣 King Scorpion
+  - 🟣 Poison Scorpion
+  - 🟣 Pit Scorpion
+  - 🟣 Scorpia
+  - 🟣 Lobstrosity
+
+═⋇═⋇═⋇═⋇═ ❧ ═⋇═⋇═⋇═⋇═
+]
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+$endif
+
+
+$if[$message==Bestiary-p7]
+$title[📜 Chapter VII]
+$description[### __Shades & Shadows__
+═════ 💀 ─── 💀 ═════
+
+🟢 Sea Snake
+  - 🟣 Sea Snake Hatchling
+  - 🟣 Sea Snake Young
+  - 🟣 Giant Sea Snake
+
+🟢 Shade
+  - 🟣 Loar
+  - 🟣 Phryn
+  - 🟣 Riyl
+  - 🟣 Asyn
+  - 🟣 Fiyr Shades
+
+🟢 Shadow Warrior
+
+🟢 Skeletal Wyvern
+
+═⋇═⋇═⋇═⋇═ ❧ ═⋇═⋇═⋇═⋇═
+]
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+$endif
+
+
+$if[$message==Bestiary-p8]
+$title[📜 Chapter VIII]
+$description[### __Webs & Smoke__
+═════ 💀 ─── 💀 ═════
+
+🟢 Skeleton
+  - 👑 Vet’ion
+  - 👑 Calvar’ion
+
+🟢 Smoke Devil
+  - 🟣 Thermonuclear Smoke Devil
+  - 🟣 Nuclear Smoke Devil
+  - 🔺 Nuclear Smoke Devil
+
+🟢 Sourhog
+
+🟢 Spider
+  - 🟣 Giant Spider
+  - 🟣 Shadow Spider
+  - 🟣 Jungle Spider
+  - 🟣 Deadly Red Spider
+  - 🟣 Poison Spider
+  - 🟣 Blessed Spider
+  - 🟣 Kalrag
+  - 🟣 Crypt Spider
+  - 🟣 Temple Spider
+  - 🟣 Sarachnis
+  - 🟣 Spindel
+  - 🟣 Venenatis
+  - 🟣 Araxyte
+  - 🟣 Araxxor
+
+═⋇═⋇═⋇═⋇═ ❧ ═⋇═⋇═⋇═⋇═
+]
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+$endif
+
+
+$if[$message==Bestiary-p9]
+$title[📜 Chapter IX]
+$description[### __Frost & Fury__
+═════ 💀 ─── 💀 ═════
+
+🟢 Spiritual Creature
+
+🟢 Steel Dragon
+
+🟢 Suqah
+
+🟢 Terror Dog
+
+🟢 Trolls
+  - 🟣 Mountain Troll
+  - 🟣 Ice Troll Grunt
+  - 🟣 Runt
+  - 🟣 Male
+  - 🟣 Female
+  - 🟣 Ice Troll
+  - 🟣 River Troll
+
+🟢 Turoth
+  - 🔺 Spiked Turoth
+
+═⋇═⋇═⋇═⋇═ ❧ ═⋇═⋇═⋇═⋇═
+]
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+$endif
+
+
+$if[$message==Bestiary-p10]
+$title[📜 Chapter X]
+$description[### __Fire & Mutation__
+═════ 💀 ─── 💀 ═════
+
+🟢 TzHaar
+  - 🟣 TzTok-Jad
+  - 🟣 TzKal-Zuk
+
+🟢 Vampyres
+  - 🟣 Vyrewatch
+  - 🟣 Vyrewatch Sentinel
+
+🟢 Wall Beasts
+
+🟢 Warped Creatures
+  - 🔺 Mutated Terrorbird
+  - 🔺 Mutated Tortoise
+
+🟢 Waterfiends
+
+🟢 Werewolves
+
+═⋇═⋇═⋇═⋇═ ❧ ═⋇═⋇═⋇═⋇═
+]
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+$endif
+
+
+$if[$message==Bestiary-p11]
+$title[📜 Chapter XI]
+$description[### __Fang & Rot__
+═════ 💀 ─── 💀 ═════
+
+🟢 Wolves
+  - 🟣 Big Wolf
+  - 🟣 Dire Wolf
+  - 🟣 Jungle Wolf
+  - 🟣 Desert Wolf
+  - 🟣 Ice Wolf
+
+🟢 Wyrms
+  - 🔺 Shadow Wyrm
+
+🟢 Zombies
+  - 🟣 Any zombie-class except Zogres and Zombie Monkeys
+
+🟢 Zygomites
+  - 🟣 Ancient Zygomite
+
+═⋇═⋇═⋇═⋇═ ❧ ═⋇═⋇═⋇═⋇═
+]
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+$endif

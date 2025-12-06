@@ -1,0 +1,99 @@
+$nomention
+$suppressErrors
+
+$onlyIf[$checkContains[$customID;skill1;skill2;skill3;skill4]==true;]
+
+$textSplit[$customID;-]
+
+$if[$replaceText[$getEmbedData[$channelID;$messageID;1;footer];Asked by ;;1]==$username#$discriminator[$authorID]]
+$ephemeral
+$removeButtons
+You cannot vote in your own poll
+
+$elseif[$checkContains[$getUserVar[voted];$messageID]==true]
+$ephemeral
+You have already voted
+
+$elseif[$splitText[1]==skill1]
+$title[$getEmbedData[$channelID;$messageID;1;title]]
+$description[$getEmbedData[$channelID;$messageID;1;description]]
+$footer[$getEmbedData[$channelID;$messageID;1;footer]]
+$color[$getEmbedData[$channelID;$messageID;1;color]]
+$thumbnail[https://gyazo.com/b97a1c6ec6b08c3a180e5a802ecb9332.png]
+$removeButtons
+
+$addButton[no;skill1-$sum[$splitText[2];1]-$splitText[3]-$splitText[4]-$splitText[5]-$sum[$splitText[6];1];1️⃣ $divide[$multi[$sum[$splitText[2];1];100];$sum[$sum[$splitText[2];1];$splitText[3];$splitText[4];$splitText[5]]]%;danger]
+$addButton[no;skill2-$sum[$splitText[2];1]-$splitText[3]-$splitText[4]-$splitText[5]-$sum[$splitText[6];1];2️⃣ $divide[$multi[$splitText[3];100];$sum[$sum[$splitText[2];1];$splitText[3];$splitText[4];$splitText[5]]]%;danger]
+$addButton[no;skill3-$sum[$splitText[2];1]-$splitText[3]-$splitText[4]-$splitText[5]-$sum[$splitText[6];1];3️⃣ $divide[$multi[$splitText[4];100];$sum[$sum[$splitText[2];1];$splitText[3];$splitText[4];$splitText[5]]]%;danger]
+$addButton[no;skill4-$sum[$splitText[2];1]-$splitText[3]-$splitText[4]-$splitText[5]-$sum[$splitText[6];1];4️⃣ $divide[$multi[$splitText[5];100];$sum[$sum[$splitText[2];1];$splitText[3];$splitText[4];$splitText[5]]]%;danger]
+$addButton[no;votes;$sum[$splitText[6];1] votes;secondary;yes]
+
+$try
+$setUserVar[voted;$messageID-$getUserVar[voted]]
+$catch
+$setUserVar[voted;$messageID-$cropText[$getUserVar[voted];$sub[$charCount[$getUserVar[voted]];20];]]
+$endtry
+
+$elseif[$splitText[1]==skill2]
+$title[$getEmbedData[$channelID;$messageID;1;title]]
+$description[$getEmbedData[$channelID;$messageID;1;description]]
+$footer[$getEmbedData[$channelID;$messageID;1;footer]]
+$color[$getEmbedData[$channelID;$messageID;1;color]]
+$thumbnail[https://gyazo.com/b97a1c6ec6b08c3a180e5a802ecb9332.png]
+$removeButtons
+
+$addButton[no;skill1-$splitText[2]-$sum[$splitText[3];1]-$splitText[4]-$splitText[5]-$sum[$splitText[6];1];1️⃣ $divide[$multi[$splitText[2];100];$sum[$splitText[2];$sum[$splitText[3];1];$splitText[4];$splitText[5]]]%;danger]
+$addButton[no;skill2-$splitText[2]-$sum[$splitText[3];1]-$splitText[4]-$splitText[5]-$sum[$splitText[6];1];2️⃣ $divide[$multi[$sum[$splitText[3];1];100];$sum[$splitText[2];$sum[$splitText[3];1];$splitText[4];$splitText[5]]]%;danger]
+$addButton[no;skill3-$splitText[2]-$sum[$splitText[3];1]-$splitText[4]-$splitText[5]-$sum[$splitText[6];1];3️⃣ $divide[$multi[$splitText[4];100];$sum[$splitText[2];$sum[$splitText[3];1];$splitText[4];$splitText[5]]]%;danger]
+$addButton[no;skill4-$splitText[2]-$splitText[3]-$splitText[4]-$sum[$splitText[5];1]-$sum[$splitText[6];1];4️⃣ $divide[$multi[$splitText[5];100];$sum[$splitText[2];$sum[$splitText[3];1];$splitText[4];$splitText[5]]]%;danger]
+$addButton[no;votes;$sum[$splitText[6];1] votes;secondary;yes]
+
+$try
+$setUserVar[voted;$messageID-$getUserVar[voted]]
+$catch
+$setUserVar[voted;$messageID-$cropText[$getUserVar[voted];$sub[$charCount[$getUserVar[voted]];20];]]
+$endtry
+
+$elseif[$splitText[1]==skill3]
+$title[$getEmbedData[$channelID;$messageID;1;title]]
+$description[$getEmbedData[$channelID;$messageID;1;description]]
+$footer[$getEmbedData[$channelID;$messageID;1;footer]]
+$color[$getEmbedData[$channelID;$messageID;1;color]]
+$thumbnail[https://gyazo.com/b97a1c6ec6b08c3a180e5a802ecb9332.png]
+$removeButtons
+
+$addButton[no;skill1-$splitText[2]-$splitText[3]-$sum[$splitText[4];1]-$splitText[5]-$sum[$splitText[6];1];1️⃣ $divide[$multi[$splitText[2];100];$sum[$splitText[2];$splitText[3];$sum[$splitText[4];1];$splitText[5]]]%;danger]
+$addButton[no;skill2-$splitText[2]-$splitText[3]-$sum[$splitText[4];1]-$splitText[5]-$sum[$splitText[6];1];2️⃣ $divide[$multi[$splitText[3];100];$sum[$splitText[2];$splitText[3];$sum[$splitText[4];1];$splitText[5]]]%;danger]
+$addButton[no;skill3-$splitText[2]-$splitText[3]-$sum[$splitText[4];1]-$splitText[5]-$sum[$splitText[6];1];3️⃣ $divide[$multi[$sum[$splitText[4];1];100];$sum[$splitText[2];$splitText[3];$sum[$splitText[4];1];$splitText[5]]]%;danger]
+$addButton[no;skill4-$splitText[2]-$splitText[3]-$sum[$splitText[4];1]-$splitText[5]-$sum[$splitText[6];1];4️⃣ $divide[$multi[$splitText[5];100];$sum[$splitText[2];$splitText[3];$sum[$splitText[4];1];$splitText[5]]]%;danger]
+$addButton[no;votes;$sum[$splitText[6];1] votes;secondary;yes]
+
+$try
+$setUserVar[voted;$messageID-$getUserVar[voted]]
+$catch
+$setUserVar[voted;$messageID-$cropText[$getUserVar[voted];$sub[$charCount[$getUserVar[voted]];20];]]
+$endtry
+
+$elseif[$splitText[1]==skill4]
+$title[$getEmbedData[$channelID;$messageID;1;title]]
+$description[$getEmbedData[$channelID;$messageID;1;description]]
+$footer[$getEmbedData[$channelID;$messageID;1;footer]]
+$color[$getEmbedData[$channelID;$messageID;1;color]]
+$thumbnail[https://gyazo.com/b97a1c6ec6b08c3a180e5a802ecb9332.png]
+$removeButtons
+
+$addButton[no;skill1-$splitText[2]-$splitText[3]-$splitText[4]-$sum[$splitText[5];1]-$sum[$splitText[6];1];1️⃣ $divide[$multi[$splitText[2];100];$sum[$splitText[2];$splitText[3];$splitText[4];$sum[$splitText[5];1]]]%;danger]
+$addButton[no;skill2-$splitText[2]-$splitText[3]-$splitText[4]-$sum[$splitText[5];1]-$sum[$splitText[6];1];2️⃣ $divide[$multi[$splitText[3];100];$sum[$splitText[2];$splitText[3];$splitText[4];$sum[$splitText[5];1]]]%;danger]
+$addButton[no;skill3-$splitText[2]-$splitText[3]-$splitText[4]-$sum[$splitText[5];1]-$sum[$splitText[6];1];3️⃣ $divide[$multi[$splitText[4];100];$sum[$splitText[2];$splitText[3];$splitText[4];$sum[$splitText[5];1]]]%;danger]
+$addButton[no;skill4-$splitText[2]-$splitText[3]-$splitText[4]-$sum[$splitText[5];1]-$sum[$splitText[6];1];4️⃣ $divide[$multi[$sum[$splitText[5];1];100];$sum[$splitText[2];$splitText[3];$splitText[4];$sum[$splitText[5];1]]]%;danger]
+$addButton[no;votes;$sum[$splitText[6];1] votes;secondary;yes]
+
+$try
+$setUserVar[voted;$messageID-$getUserVar[voted]]
+$catch
+$setUserVar[voted;$messageID-$cropText[$getUserVar[voted];$sub[$charCount[$getUserVar[voted]];20];]]
+$endtry
+
+$else
+⚠️ An error occurred
+$endif

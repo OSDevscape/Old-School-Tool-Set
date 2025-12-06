@@ -1,0 +1,49 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+
+$color[#D8A63B]
+
+$title[About OSTS]
+$description[
+## 🛠️ About Old School Tool Set  
+
+**Old School Tool Set** is an advanced Discord bot built for the **Old School RuneScape (OSRS)** community.  
+Developed with precision and passion by __***OSMays8338***__, it integrates player data, clan utilities, and automation tools to enhance every aspect of your OSRS experience — directly within Discord.  
+
+
+### ⚙️ Core Features  
+> • **Player Data Access** – Retrieve real-time stats, quest progress, and combat details via the Wise Old Man API.  
+> • **Clan Management Suite** – Manage rosters, display clan IDs, and track member activity effortlessly.  
+> • **Profile Utilities** – Register and manage RuneScape names, view custom profiles, and track quest requirements.  
+> • **Server Tools** – Maintain a clean and efficient server with built-in moderation and organization commands.  
+
+
+### 💻 Technical Highlights  
+> • Built for modern **Slash Command** integration  
+> • Supports **Wise Old Man** API for player data synchronization  
+> • Optimized for **low-latency response times** and **multi-server scalability**  
+> • Actively updated with community-driven improvements  
+
+
+### 🧱 Built for the Community  
+**Old School Tool Set** continues to evolve through user feedback and collaboration.  
+Every update aims to make clan management and player tracking simpler, smoother, and more powerful — staying true to the spirit of Old School RuneScape.  
+
+> 👨‍💻 **Developer:** __***OSMays8338***__
+ 
+> 🔗 **Join the Support Discord:** 
+> **https://discord.gg/H7dhWGVscb**
+ 
+> 📦 **GitHub / Documentation:**
+> **https://github.com/OSMays8338/Old-School-Tool-Set**
+
+> 📜 **Terms & Policies**
+>  **https://osts-terms-and-policies.netlify.app/**
+]

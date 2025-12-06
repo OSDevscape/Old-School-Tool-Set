@@ -1,0 +1,13 @@
+$nomention
+
+$httpAddHeader[Authorization;$getVar[topKey]]
+$httpGet[https://top.gg/api/bots/$getVar[topID]/check?userId=$authorID]
+
+
+$if[$httpResult[voted]==0]
+
+
+
+$elseif[$httpResult[voted]==1]
+> You have not Voted yet
+$endif

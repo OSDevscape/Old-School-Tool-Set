@@ -1,0 +1,36 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+
+$title[Thank you for Voting... ]
+$description[Thank you for taking the time to vote for us. 
+It is very much appreciated! 
+
+### We are currently on 
+• __***Top.gg***__
+• __***Botlist.me***__ 
+&
+• __***Discord Bot List***__
+]
+
+$color[#D8A63B]
+$thumbnail[https://gyazo.com/1a36d0eb62bad0227fb72d183e5f02a8.png]
+
+$c[Top.gg]
+$addButton[no;https://top.gg/bot/1424876843688788080/vote;Top.gg;link;;;]
+
+$c[Botlist.me]
+$addButton[no;https://botlist.me/bots/1424876843688788080/vote;Botlist.me;link;;;]
+
+$c[Discord Bot List]
+$addButton[no;https://discordbotlist.com/bots/old-school-tool-set/upvote;Discord Bot List;link;;;]
+
+
+
+

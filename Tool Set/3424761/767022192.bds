@@ -1,0 +1,49 @@
+$nomention
+$onlyIf[$checkContains[$customID;upvote;downvote]==true;]
+$textSplit[$customID;-]
+$if[$replaceText[$getEmbedData[$channelID;$messageID;1;footer];Asked by ;;1]==$username#$discriminator[$authorID]]
+$ephemeral
+$removeButtons
+You cannot vote in your own poll
+$elseif[$checkContains[$getUserVar[voted];$messageID]==true]
+$ephemeral
+You have already voted
+$elseif[$splitText[1]==upvote]
+$title[$getEmbedData[$channelID;$messageID;1;title]]
+$description[$getEmbedData[$channelID;$messageID;1;description]]
+$footer[$getEmbedData[$channelID;$messageID;1;footer]]
+$color[$getEmbedData[$channelID;$messageID;1;color]]
+$removeButtons
+$addButton[no;upvote-$sum[$splitText[2];1]-$splitText[3]-$sum[$splitText[4];1];⬆️ $divide[$multi[$sum[$splitText[2];1];100];$sum[$splitText[3];$sum[$splitText[2];1]]]%;primary]
+$try
+$addButton[no;downvote-$sum[$splitText[2];1]-$splitText[3]-$sum[$splitText[4];1];⬇️ $divide[$multi[$splitText[3];100];$sum[$splitText[3];$sum[$splitText[2];1]]]%;primary]
+$catch
+$addButton[no;downvote-$sum[$splitText[2];1]-$splitText[3]-$sum[$splitText[4];1];⬇️ 0%;primary]
+$endtry
+$addButton[no;votes;$sum[$splitText[4];1] votes;secondary;yes]
+$try
+$setUserVar[voted;$messageID-$getUserVar[voted]]
+$catch
+$setUserVar[voted;$messageID-$cropText[$getUserVar[voted];$sub[$charCount[$getUserVar[voted]];20];]]
+$endtry
+$elseif[$splitText[1]==downvote]
+$title[$getEmbedData[$channelID;$messageID;1;title]]
+$description[$getEmbedData[$channelID;$messageID;1;description]]
+$footer[$getEmbedData[$channelID;$messageID;1;footer]]
+$color[$getEmbedData[$channelID;$messageID;1;color]]
+$removeButtons
+$try
+$addButton[no;upvote-$splitText[2]-$sum[$splitText[3];1]-$sum[$splitText[4];1];⬆️ $divide[$multi[$splitText[2];100];$sum[$splitText[2];$sum[$splitText[3];1]]]%;primary]
+$catch
+$addButton[no;upvote-$splitText[2]-$sum[$splitText[3];1]-$sum[$splitText[4];1];⬆️ 0%;primary]
+$endtry
+$addButton[no;downvote-$splitText[2]-$sum[$splitText[3];1]-$sum[$splitText[4];1];⬇️ $divide[$multi[$sum[$splitText[3];1];100];$sum[$splitText[2];$sum[$splitText[3];1]]]%;primary]
+$addButton[no;votes;$sum[$splitText[4];1] votes;secondary;yes]
+$try
+$setUserVar[voted;$messageID-$getUserVar[voted]]
+$catch
+$setUserVar[voted;$messageID-$cropText[$getUserVar[voted];$sub[$charCount[$getUserVar[voted]];20];]]
+$endtry
+$else
+⚠️ An error occurred
+$endif 

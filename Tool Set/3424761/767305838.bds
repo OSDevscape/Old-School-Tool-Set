@@ -1,0 +1,202 @@
+$nomention 
+$deletecommand
+$cooldown[5s;Whoa buddy, slow down, No one can keep chopping like that! Wait %time% & keep going.....]
+$enableDecimals[false]
+
+$c[Level up]
+$if[$getUserVar[currentWCxp;$authorID]>=$getUserVar[nextWClevelxp;$authorID]]
+$setUserVar[WCrank;$sum[$getUserVar[WCrank;$authorID];1];$authorID]
+$setUserVar[nextWClevelxp;$sum[$getUserVar[nextWClevelxp;$authorID];100];$authorID]
+$setUserVar[WClevel;$sum[$getUserVar[WClevel;$authorID];1];$authorID]
+$setUserVar[currentWCxp;0;$authorID] 
+
+$c[Level up Message]
+$var[levelmsg;$sendMessage[> **❗__Hey <@$authorID>, you have reached Woodcutting level $sum[$getVar[WClevel;$authorID];1]__❗**
+;yes]]
+$replyIn[15s]
+$deleteMessage[$channelID;$var[levelmsg]]
+$endif
+
+
+$var[WCluck;$getVar[WCluck;$authorID]]
+$var[range;10001] $c[Can be 101, 1001, 10001, etc.]
+
+$c[Rarities scaling with luck]
+$var[t;$sum[1;$multi[$var[WCluck];1.5]]]        $c[t]
+$var[g;$sum[10;$multi[$var[WCluck];1.4]]]       $c[g]
+$var[m;$sum[40;$multi[$var[WCluck];2]]]         $c[m]
+
+$c[Rarities fixed (you can tweak these if needed)]
+$var[l;100]                                   $c[l]
+$var[e;300]                                   $c[e]
+$var[r;700]                                   $c[r]
+
+$c[Rarities decreasing with luck]
+$var[u;$max[100;$sub[2000;$multi[$var[WCluck];5]]]]   $c[u]
+$var[c;$max[100;$sub[5000;$multi[$var[WCluck];10]]]]  $c[c]
+
+$c[Total of all raw weights]
+$var[total;$sum[
+  $var[t];$var[g];$var[m];$var[l];
+  $var[e];$var[r];$var[u];$var[c]
+]]
+
+$c[Scaling factor to fit weights into your range]
+$var[f;$divide[$sub[$var[range];1];$var[total]]]
+
+$c[Final scaled weights (rounded)]
+$var[t;$round[$multi[$var[t];$var[f]]]]
+$var[g;$round[$multi[$var[g];$var[f]]]]
+$var[m;$round[$multi[$var[m];$var[f]]]]
+$var[l;$round[$multi[$var[l];$var[f]]]]
+$var[e;$round[$multi[$var[e];$var[f]]]]
+$var[r;$round[$multi[$var[r];$var[f]]]]
+$var[u;$round[$multi[$var[u];$var[f]]]]
+$var[c;$round[$multi[$var[c];$var[f]]]]
+
+$c[percentage converter]
+$var[tp;$round[$divide[$multi[$var[t];100];$var[range]]]]
+$var[gp;$round[$divide[$multi[$var[g];100];$var[range]]]]
+$var[mp;$round[$divide[$multi[$var[m];100];$var[range]]]]
+$var[lp;$round[$divide[$multi[$var[l];100];$var[range]]]]
+$var[ep;$round[$divide[$multi[$var[e];100];$var[range]]]]
+$var[rp;$round[$divide[$multi[$var[r];100];$var[range]]]]
+$var[up;$round[$divide[$multi[$var[u];100];$var[range]]]]
+$var[cp;$round[$divide[$multi[$var[c];100];$var[range]]]]
+
+
+
+$c[Roll a number within the range]
+$var[roll;$random[1;$var[range]]]
+
+$c[Build cumulative thresholds]
+$var[a;$var[t]]
+$var[b;$sum[$var[a];$var[g]]]
+$var[c2;$sum[$var[b];$var[m]]]
+$var[d;$sum[$var[c2];$var[l]]]
+$var[e2;$sum[$var[d];$var[e]]]
+$var[f2;$sum[$var[e2];$var[r]]]
+$var[g2;$sum[$var[f2];$var[u]]]
+
+$if[$var[roll]<=$var[a]]
+$c[Redwood Tree]
+$setUserVar[item-Redwood_Log;$sum[$getUserVar[item-Redwood_Log;$authorID];1];$authorID]
+
+$c[Current WC XP]
+$setUserVar[currentWCxp;$sum[$getUserVar[currentWCxp;$authorID];$random[75;150]];$authorID]
+
+$title[Woodcutting]
+$description[
+> You have chopped down the Redwood tree and gained 1 log!
+
+$c[Chance: $var[tp]% ]
+]
+$deleteIn[15s]
+
+$elseif[$var[roll]<=$var[b]]
+$c[Magic Tree]
+$setUserVar[item-Magic_Log;$sum[$getUserVar[item-Magic_Log;$authorID];$random[1;2]];$authorID]
+
+$c[Current WC XP]
+$setUserVar[currentWCxp;$sum[$getUserVar[currentWCxp;$authorID];$random[50;100]];$authorID]
+
+$title[Woodcutting]
+$description[
+> You have chopped down the Magic tree and gained $random[1;2] log!
+
+$c[Chance: $var[gp]%] 
+]
+$deleteIn[15s]
+
+$elseif[$var[roll]<=$var[c2]]
+$c[Yew Tree]
+$setUserVar[item-Yew_Log;$sum[$getUserVar[item-Yew_Log;$authorID];$random[1;3]];$authorID]
+
+$c[Current WC XP]
+$setUserVar[currentWCxp;$sum[$getUserVar[currentWCxp;$authorID];$random[25;40]];$authorID]
+
+$title[Woodcutting]
+$description[
+> You have chopped down the Yew tree and gained $random[1;3] log!
+
+$c[Chance: $var[mp]% ]
+]
+$deleteIn[15s]
+
+$elseif[$var[roll]<=$var[d]]
+$c[Mahogany Tree]
+$setUserVar[item-Mahogany_Log;$sum[$getUserVar[item-Mahogany_Log;$authorID];$random[1;4]];$authorID]
+
+$c[Current WC XP]
+$setUserVar[currentWCxp;$sum[$getUserVar[currentWCxp;$authorID];$random[20;35]];$authorID]
+
+$title[Woodcutting]
+$description[
+> You have chopped down the Mahogany tree and gained $random[1;4] log!
+
+$c[Chance: $var[lp]%] 
+]
+$deleteIn[15s]
+
+$elseif[$var[roll]<=$var[e2]]
+$c[Maple Tree]
+$setUserVar[item-Maple_Log;$sum[$getUserVar[item-Maple_Log;$authorID];$random[1;5]];$authorID]
+
+$c[Current WC XP]
+$setUserVar[currentWCxp;$sum[$getUserVar[currentWCxp;$authorID];$random[15;30]];$authorID]
+
+$title[Woodcutting]
+$description[
+> You have chopped down the Maple tree and gained $random[1;5] log!
+
+$c[Chance: $var[ep]% ]
+]
+$deleteIn[15s]
+
+$elseif[$var[roll]<=$var[f2]]
+$c[Teak Tree]
+$setUserVar[item-Teak_Log;$sum[$getUserVar[item-Teak_Log;$authorID];$random[1;6]];$authorID]
+
+$c[Current WC XP]
+$setUserVar[currentWCxp;$sum[$getUserVar[currentWCxp;$authorID];$random[10;20]];$authorID]
+
+$title[Woodcutting]
+$description[
+> You have chopped down the Teak tree and gained $random[1;6] log!
+
+$c[Chance: $var[rp]% ]
+]
+$deleteIn[15s]
+
+$elseif[$var[roll]<=$var[g2]]
+$c[Willow Tree]
+$setUserVar[item-Willow_Log;$sum[$getUserVar[item-Willow_Log;$authorID];$random[1;8]];$authorID]
+
+$c[Current WC XP]
+$setUserVar[currentWCxp;$sum[$getUserVar[currentWCxp;$authorID];$random[10;15]];$authorID]
+
+$title[Woodcutting]
+$description[
+> You have chopped down the Willow tree and gained $random[1;7] log!
+
+$c[Chance: $var[up]% ]
+]
+$deleteIn[15s]
+
+$else
+
+$c[Oak Tree]
+$setUserVar[item-Oak_Log;$sum[$getUserVar[item-Oak_Log;$authorID];$round[$random[1;8];]];$authorID]
+
+$c[Current WC XP]
+$setUserVar[currentWCxp;$sum[$getUserVar[currentWCxp;$authorID];$random[5;10]];$authorID]
+
+$title[Woodcutting]
+$description[
+> You have chopped down the Oak tree and gained $round[$random[1;8];] log!
+
+$c[Chance: $var[cp]%]
+]
+$deleteIn[15s]
+
+$endif

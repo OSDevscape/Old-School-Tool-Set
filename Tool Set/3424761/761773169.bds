@@ -1,0 +1,89 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$botListHide
+$nomention
+
+$c[Newline Variable]
+$var[\n;$url[decode;%0A]]
+ 
+
+
+$nomention 
+$if[$message==Foreword]
+$title[$nickname[$authorID], ]
+$description[Welcome to the __**Slayer Diaries**__.
+
+__**Foreword**__  
+This Codex has been entrusted to you by the Slayer Masters of Gielinor.  
+Within its pages lie the knowledge and records of every creature worthy of the hunt.  
+Guard it well, for it is both a guide and a chronicle of your growing legend.
+
+*— By Duradel, Slayer Master of Shilo Village*
+]
+
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+
+
+$elseif[$message==About]
+$title[About Slayer Diaries]
+$description[
+This command provides details about your specified ***Slayer monster***, 
+Including:
+```
+🟢 Standard Monsters
+🟣 Variants
+🔺 Superiors
+👑 Bosses
+```
+Also useful information like 
+- Locations 
+- Item requirements
+- Key drops
+- Mechanics
+&
+- How **Ironman** should handle it$var[\n]
+Whether you're looking for the best places to hunt, notable loot, or necessary preparations, this tool ensures you have everything needed for efficient Slayer training.
+]
+
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B] 
+
+
+$elseif[$message==Usage]
+$title[Usage Explanation]
+$description[
+Use the lists within the Bestiary to find each creature’s proper name. 
+ 
+Use as a slash command or as **`!entry <monsterName>`** to reveal its article in full detail. 
+ 
+Should you encounter a foe not yet scribed, report it for inscription —  
+that the Codex may remain ever complete.]
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+
+
+
+$elseif[$message==taskWeight]
+$title[Task Weight Explanation]
+$description[
+The weight determines how often a monster is assigned as a Slayer task. Higher weight means a higher chance of being picked. For example, if Aberrant Spectres have a weight of 6 and Gargoyles have 10, Gargoyles are more likely to be assigned. Other factors like blocked tasks and Slayer level also affect the outcome.]
+$c[Footer]
+$thumbnail[$getVar[SDlogo]]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#D8A63B]
+
+
+
+$endif

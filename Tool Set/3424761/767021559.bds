@@ -1,0 +1,65 @@
+$nomention
+$var[embed_colour;FFFF00]
+$var[bot_prefix;.]
+$c[Newline Variable]
+$var[\n;$url[decode;%0A]]
+
+$async[seconds]
+$textSplit[$message[1];s]
+$if[$isNumber[$message[1]]==true]
+$message[1]
+$elseif[$isNumber[$splitText[1]]==true]
+$splitText[1]
+$else
+$textSplit[$splitText[1];m]
+$if[$isNumber[$splitText[2]]==true]
+$splitText[2]
+$else
+0
+$endif
+$endif
+$endasync
+$var[seconds;$await[seconds]]
+
+$async[minutes]
+$textSplit[$message[1];m]
+$if[$isNumber[$splitText[1]]==true]
+$splitText[1]
+$else
+$textSplit[$splitText[1];h]
+$if[$isNumber[$splitText[2]]==true]
+$splitText[2]
+$else
+0
+$endif
+$endif
+$endasync
+
+$async[hours]
+$textSplit[$message[1];h]
+$if[$isNumber[$splitText[1]]==true]
+$splitText[1]
+$else
+0
+$endif
+$endasync
+
+$onlyIf[$sum[$multi[3600;$await[hours]];$multi[60;$await[minutes]];$await[seconds]]<345600;⚠️ Duration cannot exceed 4 days]
+$onlyIf[$message[2]!=;⚠️ Invalid usage!
+`$var[bot_prefix]remind <time> <reminder>
+$var[bot_prefix]remind 7h2m18s Party`]
+$onlyIf[$sum[$multi[3600;$await[hours]];$multi[60;$await[minutes]];$await[seconds]]>1;⚠️ Duration must exceed 0 seconds]
+$sendEmbedMessage[$channelID;;$nickname[$authorID];;You have successfully set a reminder for $replaceText[“$replaceText[$message;$message[1];]”; ;;1],$var[\n]$var[\n]I will remind you about it in $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$await[hours] hours, $await[minutes] minutes and $await[seconds] seconds;1 hours;1 hour];1 minutes;1 minute];1 seconds;1 second];0 hours, ;];0 minutes and;];
+;];$var[embed_colour]]
+$async[reminder]
+$var[thingy;$repeatMessage[10;$repeatMessage[10;$repeatMessage[10;$repeatMessage[10;$repeatMessage[10;0]]]]]]
+$var[thingy;$cropText[$var[thingy];$sum[$multi[60;$await[hours]];$await[minutes]];]]
+$eval[$replaceText[$var[thingy];0;%{DOL}%replyIn[1m\]]]$var[seconds]
+$var[thingy;$repeatMessage[10;$repeatMessage[10;$repeatMessage[10;$repeatMessage[10;$repeatMessage[10;0]]]]]]
+$var[thingy;$cropText[$var[thingy];$await[seconds];]]
+$eval[$replaceText[$var[thingy];0;%{DOL}%replyIn[1s\]]]
+$sendEmbedMessage[$dmChannelID[$authorID];;Reminder;;Reminder for $replaceText[“$replaceText[$message;$message[1];]”; ;;1] from $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$await[hours] hours, $await[minutes] minutes and $await[seconds] seconds;1 hours;1 hour];1 minutes;1 minute];1 seconds;1 second];0 hours, ;];0 minutes and;];
+;] ago
+
+[Jump to Message\](https://discord.com/channels/$guildID/$channelID/$messageID);$var[embed_colour]]
+$endasync

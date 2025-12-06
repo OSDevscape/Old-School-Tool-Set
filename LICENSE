@@ -1,0 +1,35 @@
+Old School Tool Set License v1.1  
+Copyright © 2025 OSMays8338  
+All rights reserved.
+
+This project, including its original code, configuration files, BDS templates, wiki layout, API integrations, and custom-written documentation (collectively, the “Work”), is the intellectual property of OSMays8338 and is protected under applicable copyright laws.
+
+Portions of this Work may incorporate or display content from the following third-party sources:
+
+- **Old School RuneScape Wiki** (https://oldschool.runescape.wiki), licensed under the Creative Commons Attribution-ShareAlike 3.0 license (CC BY-SA 3.0). Such content is provided under the terms of the CC BY-SA 3.0 license, and this License does not alter or restrict those terms.  
+  **Any text, data, or media sourced from the Old School RuneScape Wiki is distributed under the CC BY-SA 3.0 license. All other parts of this Work remain under the terms of this License.**  
+  Attribution to the OSRS Wiki and its contributors is hereby acknowledged.
+
+- **Wise Old Man API** (https://wiseoldman.net), an open API for RuneScape player and group tracking. The Old School Tool Set uses this API for data retrieval and display in compliance with its public usage policy. All Wise Old Man data remains the property of its respective creators and maintainers.
+
+- **Bot Designer For Discord** (.bds) scripts and environment are used for automated bot functionality and command processing. This project is not affiliated with, or endorsed by, Bot Designer For Discord.
+
+Old School RuneScape and related assets are trademarks and intellectual property of Jagex Ltd. This project is unaffiliated with, and not endorsed by, Jagex or the OSRS Wiki team. All rights to original game assets and official documentation are retained by their respective owners.
+
+Except where otherwise required by CC BY-SA 3.0 for incorporated OSRS Wiki content, permission is granted to view the Work for personal, non-commercial reference purposes only. No other rights are granted. Without the prior written consent of the copyright holder, you may not:
+
+- Reproduce, copy, or redistribute any part of the Work;
+- Modify, adapt, translate, or create derivative works based on the Work;
+- Use the Work, in whole or in part, for any commercial or public-facing purpose;
+- Host, mirror, or publish the Work in any physical or digital medium, including wikis, websites, or repositories.
+
+**Disclaimer of Warranty:**  
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.  
+IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM OR IN CONNECTION WITH THE WORK OR THE USE OR OTHER DEALINGS IN THE WORK.
+
+For licensing requests, permissions, or other inquiries, contact:  
+https://github.com/OSMays8338
+
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠

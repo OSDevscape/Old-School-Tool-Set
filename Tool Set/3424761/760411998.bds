@@ -1,0 +1,32 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$c[Newline Variable]
+$var[\n;$url[decode;%0A]]
+
+$botListHide
+
+$nomention
+<@$authorID>
+$title[Welcome to $serverName[$guildID]'s Server]
+$description[$eval[$unescape[$getServerVar[welcomemsg]]]
+]
+
+$thumbnail[$getServerVar[thumbnail]] 
+$color[$getServerVar[welcolor]]
+$footer[$getServerVar[footmsg]]
+
+$addTimestamp
+$author[$username[$authorID]]
+$authorIcon[$authorAvatar]
+
+
+
+$if[1398976009214230630==$guildID[Bonded4Life]]
+$sendEmbedMessage[1403314447430455419;;Book of Echos;;__**Name**__:$var[\n]$username[$authorID]$var[\n]$var[\n]__**Member Count**__:$var[\n]$serverCount;$getServerVar[welcolor];;;$getServerVar[footmsg];;$authorAvatar;;yes;no]
+$endif

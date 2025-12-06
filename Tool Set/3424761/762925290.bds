@@ -1,0 +1,37 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+
+$nomention
+
+$color[FF0000]
+
+$title[Testing ]
+$description[$randomText[
+“Ah, welcome! Step closer, adventurer.
+Here you’ll find trinkets, scrolls, and relics to increase your Gold and improve your earnings.
+Invest wisely — even a small coin today can grow into a mighty fortune tomorrow!”
+;
+“Greetings, traveler! The market is full today, but there’s always room for a clever adventurer.
+Choose wisely from my wares to increase your wealth, sharpen your skills, and prepare for greater ventures ahead.”
+;
+“Well met, adventurer! Gold flows for those who know where to spend it.
+From small trinkets to mighty relics, each purchase can help grow your coffers and prepare you for the challenges that await.”]
+]
+
+
+$newSelectMenu[Store;1;1;Welcome to the Store!]
+$addSelectMenuOption[Store;This is our Menu;Menu-p1;Check out what we have. ]
+
+
+$if[$message[slayer]==true]
+$newSelectMenu[Slayer;1;1;Slayer Shop]
+$addSelectMenuOption[Slayer;Welcome Adventurer,;SS-p1;Spend your Points here]
+$endif 
+
+$addButton[no;CloseStore;Leave;danger;;🚪;]

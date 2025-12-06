@@ -1,0 +1,17 @@
+$nomention
+$var[error;$try$time[$replaceText[$toTitleCase[$message]; ;_]]$catcherror$endtry]
+$var[timezone;$replaceText[$toTitleCase[$message]; ;_]]
+$if[$and[$message==;$getVar[timezone;$authorID]==]==true]
+You haven’t set up your timezone yet, set it up by using ?time <timezone>. Don’t know your timezone? Find yours here: 
+https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+$elseif[$and[$getVar[timezone;$authorID]!=;$message==]==true]
+$time[$getVar[timezone;$authorID]]
+$username’s time:
+$month $day, $year at $hour:$minute
+$elseif[$var[error]!=error]
+$setVar[timezone;$var[timezone];$authorID]
+Successfully set your timezone to $var[timezone]
+$elseif[$var[error]==error]
+$message isn’t a valid timezone, find yours here: 
+https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+$endif

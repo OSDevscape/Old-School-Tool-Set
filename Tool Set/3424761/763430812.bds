@@ -1,0 +1,93 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+
+$nomention
+$onlyIf[$checkUserPerms[$authorID;admin]==true;You are missing the following permissions `admin`]
+$jsonParse[$getUserVar[tags;$botID]]
+ 
+$if[$message==$json[tag1]]
+$jsonSetString[tag1;null]
+$jsonSetString[tag1msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag2]]
+$jsonSetString[tag2;null]
+$jsonSetString[tag2msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag3]]
+$jsonSetString[tag3;null]
+$jsonSetString[tag3msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag4]]
+$jsonSetString[tag4;null]
+$jsonSetString[tag4msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag5]]
+$jsonSetString[tag5;null]
+$jsonSetString[tag5msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag6]]
+$jsonSetString[tag6;null]
+$jsonSetString[tag6msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag7]]
+$jsonSetString[tag7;null]
+$jsonSetString[tag7msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag8]]
+$jsonSetString[tag8;null]
+$jsonSetString[tag8msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag9]]
+$jsonSetString[tag9;null]
+$jsonSetString[tag9msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag10]]
+$jsonSetString[tag10;null]
+$jsonSetString[tag10msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag11]]
+$jsonSetString[tag11;null]
+$jsonSetString[tag11msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag12]]
+$jsonSetString[tag12;null]
+$jsonSetString[tag12msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag13]]
+$jsonSetString[tag13;null]
+$jsonSetString[tag13msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag14]]
+$jsonSetString[tag14;null]
+$jsonSetString[tag14msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$elseif[$message==$json[tag15]]
+$jsonSetString[tag15;null]
+$jsonSetString[tag15msg;null]
+$sendMessage[Removed The tag "$message" successfully]
+ 
+$else 
+$sendMessage[Invalid tag]
+$endif
+
+$setUserVar[tags;$jsonStringify;$botID]

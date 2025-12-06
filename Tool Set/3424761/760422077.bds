@@ -1,0 +1,149 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+
+$c[This command can only be used by Members.]
+$onlyForRoles[Member;:x: You need to be a Member to use this]
+
+$c[API Call]
+$httpGet[https://api.wiseoldman.net/v2/players/$getVar[RSN;$authorID]] 
+
+$title[Account Profile]
+$description[This is the profile for __**$httpResult[displayName]**__
+
+$c[Overall]
+$addField[<:Stats_icon:1426867260483702884> Overall;
+        > Level: $httpResult[latestSnapshot;data;skills;overall;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;overall;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;overall;experience];,]
+        ;true;1]
+
+$addField[<:Attack_icon:ID> Attack;
+        > Level: $httpResult[latestSnapshot;data;skills;attack;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;attack;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;attack;experience];,]
+        ;true;2]
+$addField[<:Defence_icon:ID> Defence;
+        > Level: $httpResult[latestSnapshot;data;skills;defence;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;defence;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;defence;experience];,]
+        ;true;3]
+$addField[<:Strength_icon:ID> Strength;
+        > Level: $httpResult[latestSnapshot;data;skills;strength;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;strength;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;strength;experience];,]
+        ;true;4]
+$addField[<:Hitpoints_icon:ID> Hitpoints;
+        > Level: $httpResult[latestSnapshot;data;skills;hitpoints;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;hitpoints;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;hitpoints;experience];,]
+        ;true;5]
+$addField[<:Ranged_icon:ID> Ranged;
+        > Level: $httpResult[latestSnapshot;data;skills;ranged;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;ranged;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;ranged;experience];,]
+        ;true;6]
+$addField[<:Prayer_icon:ID> Prayer;
+        > Level: $httpResult[latestSnapshot;data;skills;prayer;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;prayer;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;prayer;experience];,]
+        ;true;7]
+$addField[<:Magic_icon:ID> Magic;
+        > Level: $httpResult[latestSnapshot;data;skills;magic;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;magic;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;magic;experience];,]
+        ;true;8]
+$addField[<:Cooking_icon:ID> Cooking;
+        > Level: $httpResult[latestSnapshot;data;skills;cooking;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;cooking;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;cooking;experience];,]
+        ;true;9]
+$addField[<:Woodcutting_icon:ID> Woodcutting;
+        > Level: $httpResult[latestSnapshot;data;skills;woodcutting;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;woodcutting;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;woodcutting;experience];,]
+        ;true;10]
+$addField[<:Fletching_icon:ID> Fletching;
+        > Level: $httpResult[latestSnapshot;data;skills;fletching;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;fletching;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;fletching;experience];,]
+        ;true;11]
+$addField[<:Fishing_icon:ID> Fishing;
+        > Level: $httpResult[latestSnapshot;data;skills;fishing;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;fishing;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;fishing;experience];,]
+        ;true;12]
+$addField[<:Firemaking_icon:ID> Firemaking;
+        > Level: $httpResult[latestSnapshot;data;skills;firemaking;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;firemaking;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;firemaking;experience];,]
+        ;true;13]
+$addField[<:Crafting_icon:ID> Crafting;
+        > Level: $httpResult[latestSnapshot;data;skills;crafting;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;crafting;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;crafting;experience];,]
+        ;true;14]
+$addField[<:Smithing_icon:ID> Smithing;
+        > Level: $httpResult[latestSnapshot;data;skills;smithing;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;smithing;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;smithing;experience];,]
+        ;true;15]
+$addField[<:Mining_icon:ID> Mining;
+        > Level: $httpResult[latestSnapshot;data;skills;mining;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;mining;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;mining;experience];,]
+        ;true;16]
+$addField[<:Herblore_icon:ID> Herblore;
+        > Level: $httpResult[latestSnapshot;data;skills;herblore;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;herblore;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;herblore;experience];,]
+        ;true;17]
+$addField[<:Agility_icon:ID> Agility;
+        > Level: $httpResult[latestSnapshot;data;skills;agility;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;agility;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;agility;experience];,]
+        ;true;18]
+$addField[<:Thieving_icon:ID> Thieving;
+        > Level: $httpResult[latestSnapshot;data;skills;thieving;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;thieving;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;thieving;experience];,]
+        ;true;19]
+$addField[<:Slayer_icon:ID> Slayer;
+        > Level: $httpResult[latestSnapshot;data;skills;slayer;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;slayer;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;slayer;experience];,]
+        ;true;20]
+$addField[<:Farming_icon:ID> Farming;
+        > Level: $httpResult[latestSnapshot;data;skills;farming;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;farming;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;farming;experience];,]
+        ;true;21]
+$addField[<:Runecrafting_icon:ID> Runecrafting;
+        > Level: $httpResult[latestSnapshot;data;skills;runecrafting;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;runecrafting;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;runecrafting;experience];,]
+        ;true;22]
+$addField[<:Hunter_icon:ID> Hunter;
+        > Level: $httpResult[latestSnapshot;data;skills;hunter;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;hunter;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;hunter;experience];,]
+        ;true;23]
+$addField[<:Construction_icon:ID> Construction;
+        > Level: $httpResult[latestSnapshot;data;skills;construction;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;construction;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;construction;experience];,]
+        ;true;24]
+$addField[<:Sailing_icon:ID> Sailing;
+        > Level: $httpResult[latestSnapshot;data;skills;sailing;level]
+        > Rank: $numberSeparator[$httpResult[latestSnapshot;data;skills;sailing;rank];,]
+        > XP: $numberSeparator[$httpResult[latestSnapshot;data;skills;sailing;experience];,]
+        ;true;25]
+]
+
+$color[$getRoleColor[$highestRole[$authorID]]]

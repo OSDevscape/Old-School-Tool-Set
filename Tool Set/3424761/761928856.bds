@@ -1,0 +1,201 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+
+$c[This command can only be used by Members.
+$onlyForRoles[Member;:x: You need to be a Member to use this]]
+
+$c[Newline Variable]
+$var[\n;$url[decode;%0A]]
+
+$c[Right Bracket Variable]
+$var[\rb;$url[decode;%5D]]
+
+$c[Left Bracket Variable]
+$var[\lb;$url[decode;%5B]]
+
+
+$nomention
+
+
+$c[The Abyssal & Accursed]
+$c[═════ 💀 ─── 💀 ═════]
+
+
+$c[..... Spectres .....]
+
+$c[——— Aberrant Spectre ———]
+$if[$message==Aberrant spectre]
+$title[Aberrant spectre]
+$embeddedURL[https://oldschool.runescape.wiki/w/Aberrant_spectre;1] 
+$description[
+(Type:🟢 Standard)
+(Weight: 6):
+
+📜 __**Assigned by**__:
+> # <:Vannaka:1426868501666205706><:Chaeldar:1426868310527578142><:Konar:1426868344207839335><:Nieve:1426868418161676359><:Duradel:1426868326877106311>]
+
+
+$addField[📌 __**Location & Gear**__;> - $var[\lb]Slayer Tower$var[\rb](https://oldschool.runescape.wiki/w/Slayer_Tower) or $var[\lb]Catacombs of Kourend$var[\rb](https://oldschool.runescape.wiki/w/Catacombs_of_Kourend)  
+> - Requires $var[\lb]Nose peg$var[\rb](https://oldschool.runescape.wiki/w/Nose_peg) or $var[\lb]Slayer helmet$var[\rb](https://oldschool.runescape.wiki/w/Slayer_helmet)  
+> - Bring $var[\lb]Prayer gear$var[\rb](https://oldschool.runescape.wiki/w/Prayer_armour) or $var[\lb]Magic defence$var[\rb](https://oldschool.runescape.wiki/w/Magic_armour);no;1]
+
+$addField[💎 __**Drops & Variants**__;> - $var[\lb]Herbs$var[\rb](https://oldschool.runescape.wiki/w/Herblore), $var[\lb]Rune items$var[\rb](https://oldschool.runescape.wiki/w/Rune_equipment), $var[\lb]Lava battlestaff$var[\rb](https://oldschool.runescape.wiki/w/Lava_battlestaff), $var[\lb]Clue scroll (hard)$var[\rb](https://oldschool.runescape.wiki/w/Clue_scroll_(Hard))  
+> - Variant: $var[\lb]Deviant spectre$var[\rb](https://oldschool.runescape.wiki/w/Deviant_spectre), $var[\lb]Abhorrent Spectre$var[\rb](https://oldschool.runescape.wiki/w/Abhorrent_spectre), $var[\lb]Repugnant Spectre$var[\rb](https://oldschool.runescape.wiki/w/Repugnant_spectre);no;1]
+
+$addField[<:Ironman:1426869294444052510> __**Ironman**__:;> __***DO***__ — Great for herb stacks, dark totem pieces, and passive clues;no;1]
+
+$addField[📖 __**Summary**__:;Aberrant Spectres require 60 Slayer and a nose peg or Slayer helmet. They attack with Magic, so Protect from Magic or high defence gear is recommended. Catacombs are ideal due to Prayer restoration and shard drops. Superiors give better loot and XP.;no;1]
+
+$c[Footer]
+$thumbnail[https://oldschool.runescape.wiki/images/thumb/b/bb/Aberrant_spectre.png/120px-Aberrant_spectre.png]
+$footerIcon[https://gyazo.com/eba1012515f77f8f231e1ecff813d27a.png;1]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#a8b83e]
+
+$addButton[no;https://oldschool.runescape.wiki/w/Aberrant_spectre;Wiki;link;;🖥️;]
+$addButton[no;CloseSDpage;Close Book;danger;;📔;]
+$endif
+
+$c[——— Deviant Spectre ———]
+$if[$message==Deviant spectre]
+$title[Deviant spectre]
+$embeddedURL[https://oldschool.runescape.wiki/w/Deviant_spectre;1] 
+$description[
+(Type:🟣 Superior)
+(Weight: 6):
+
+📜 __**Assigned by**__:
+> # <:Vannaka:1426868501666205706><:Chaeldar:1426868310527578142><:Konar:1426868344207839335><:Nieve:1426868418161676359><:Duradel:1426868326877106311>]
+
+$addField[📌 __**Location & Gear**__;> - $var[\lb]Catacombs of Kourend$var[\rb](https://oldschool.runescape.wiki/w/Catacombs_of_Kourend) only  
+> - Requires $var[\lb]Nose peg$var[\rb](https://oldschool.runescape.wiki/w/Nose_peg) or $var[\lb]Slayer helmet$var[\rb](https://oldschool.runescape.wiki/w/Slayer_helmet)  
+> - Bring $var[\lb]Prayer gear$var[\rb](https://oldschool.runescape.wiki/w/Prayer_armour) or $var[\lb]Magic defence$var[\rb](https://oldschool.runescape.wiki/w/Magic_armour);no;1]
+
+$addField[💎 __**Drops & Variants**__;> - $var[\lb]Noted grimy herbs$var[\rb](https://oldschool.runescape.wiki/w/Grimy_herb#Deviant_spectre), $var[\lb]Rune equipment$var[\rb](https://oldschool.runescape.wiki/w/Rune_equipment), $var[\lb]Dark totem pieces$var[\rb](https://oldschool.runescape.wiki/w/Dark_totem), $var[\lb]Clue scroll (elite)$var[\rb](https://oldschool.runescape.wiki/w/Clue_scroll_(Elite))  
+> - Related: $var[\lb]Aberrant_spectre$var[\rb](https://oldschool.runescape.wiki/w/Aberrant_spectre), $var[\lb]Abhorrent_spectre$var[\rb](https://oldschool.runescape.wiki/w/Abhorrent_spectre), $var[\lb]Repugnant_spectre$var[\rb](https://oldschool.runescape.wiki/w/Repugnant_spectre);no;1]
+
+$addField[<:Ironman:1426869294444052510> __**Ironman**__:;> __***DO***__ — Excellent for herbs, dark totem progress, and high Slayer XP;no;1]
+
+$addField[📖 __**Summary**__:;Deviant Spectres are the superior variant of Aberrant Spectres, requiring 60 Slayer. They attack with Magic and drain Prayer, so a Slayer helmet or nose peg is mandatory. Found only in the Catacombs, they offer great herb drops and totem shards, making them one of the best tasks for Ironmen seeking resources and XP.;no;1]
+
+$c[Footer]
+$thumbnail[https://oldschool.runescape.wiki/images/thumb/c/ca/Deviant_spectre.png/120px-Deviant_spectre.png]
+$footerIcon[https://gyazo.com/eba1012515f77f8f231e1ecff813d27a.png;1]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#a643b8]
+
+$addButton[no;https://oldschool.runescape.wiki/w/Deviant_spectre;Wiki;link;;🖥️;]
+$addButton[no;CloseSDpage;Close Book;danger;;📔;]
+$endif
+
+$c[——— Abhorrent Spectre ———]
+$if[$message==Abhorrent spectre]
+$title[Abhorrent spectre]
+$embeddedURL[https://oldschool.runescape.wiki/w/Abhorrent_spectre;1]
+$description[
+(Type:🔺 Superior)
+(Weight: 6):
+
+📜 __**Assigned by**__:
+> # <:Vannaka:1426868501666205706><:Chaeldar:1426868310527578142><:Konar:1426868344207839335><:Nieve:1426868418161676359><:Duradel:1426868326877106311>]
+
+$addField[📌 __**Location & Gear**__;> - $var[\lb]Slayer Tower$var[\rb](https://oldschool.runescape.wiki/w/Slayer_Tower) or $var[\lb]Catacombs of Kourend$var[\rb](https://oldschool.runescape.wiki/w/Catacombs_of_Kourend)
+> - Requires $var[\lb]Nose peg$var[\rb](https://oldschool.runescape.wiki/w/Nose_peg) or $var[\lb]Slayer helmet$var[\rb](https://oldschool.runescape.wiki/w/Slayer_helmet)
+> - Bring $var[\lb]Prayer gear$var[\rb](https://oldschool.runescape.wiki/w/Prayer_armour) or $var[\lb]Magic defence$var[\rb](https://oldschool.runescape.wiki/w/Magic_armour);no;1]
+
+$addField[💎 __**Drops & Variants**__;> - $var[\lb]Superior unique drops$var[\rb](https://oldschool.runescape.wiki/w/Superior_Slayer_monster#Abhorrent_spectre), $var[\lb]Herbs$var[\rb](https://oldschool.runescape.wiki/w/Herblore), $var[\lb]Lava battlestaff$var[\rb](https://oldschool.runescape.wiki/w/Lava_battlestaff), $var[\lb]Clue scroll (hard)$var[\rb](https://oldschool.runescape.wiki/w/Clue_scroll_(Hard))
+> - Related: $var[\lb]Aberrant spectre$var[\rb](https://oldschool.runescape.wiki/w/Aberrant_spectre), $var[\lb]Deviant spectre$var[\rb](https://oldschool.runescape.wiki/w/Deviant_spectre), $var[\lb]Repugnant spectre$var[\rb](https://oldschool.runescape.wiki/w/Repugnant_spectre);no;1]
+
+$addField[<:Ironman:1426869294444052510> __**Ironman**__:;> __***DO***__ — Superior spectres offer exclusive drops and significant XP. Good for totem shards and clues;no;1]
+
+$addField[📖 __**Summary**__:;Abhorrent Spectres are the superior spawn for Aberrant Spectre tasks. Requires 60 Slayer. Defend against Magic, use a helmet or nose peg. Found in the same locations as regular spectres. Superiors have better loot chances and unique drops.;no;1]
+
+$c[Footer]
+$thumbnail[https://oldschool.runescape.wiki/images/thumb/9/92/Abhorrent_spectre.png/120px-Abhorrent_spectre.png]
+$footerIcon[https://gyazo.com/eba1012515f77f8f231e1ecff813d27a.png;1]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#f44435]
+
+$addButton[no;https://oldschool.runescape.wiki/w/Abhorrent_spectre;Wiki;link;;🖥️;]
+$addButton[no;CloseSDpage;Close Book;danger;;📔;]
+$endif
+
+$c[——— Repugnant Spectre ———]
+$if[$message==Repugnant spectre]
+$title[Repugnant spectre]
+$embeddedURL[https://oldschool.runescape.wiki/w/Repugnant_spectre;1]
+$description[
+(Type:🔺 Superior)
+(Weight: 6):
+
+📜 __**Assigned by**__:
+> # <:Vannaka:1426868501666205706><:Chaeldar:1426868310527578142><:Konar:1426868344207839335><:Nieve:1426868418161676359><:Duradel:1426868326877106311>]
+
+$addField[📌 __**Location & Gear**__;> - $var[\lb]Catacombs of Kourend$var[\rb](https://oldschool.runescape.wiki/w/Catacombs_of_Kourend)
+> - Requires $var[\lb]Nose peg$var[\rb](https://oldschool.runescape.wiki/w/Nose_peg) or $var[\lb]Slayer helmet$var[\rb](https://oldschool.runescape.wiki/w/Slayer_helmet)
+> - Bring $var[\lb]Prayer gear$var[\rb](https://oldschool.runescape.wiki/w/Prayer_armour) or $var[\lb]Magic defence$var[\rb](https://oldschool.runescape.wiki/w/Magic_armour);no;1]
+
+$addField[💎 __**Drops & Variants**__;> - $var[\lb]Superior unique drops$var[\rb](https://oldschool.runescape.wiki/w/Superior_Slayer_monster#Repugnant_spectre), $var[\lb]Herbs$var[\rb](https://oldschool.runescape.wiki/w/Herblore), $var[\lb]Rune equipment$var[\rb](https://oldschool.runescape.wiki/w/Rune_equipment), $var[\lb]Clue scroll (elite)$var[\rb](https://oldschool.runescape.wiki/w/Clue_scroll_(Elite))
+> - Related: $var[\lb]Aberrant spectre$var[\rb](https://oldschool.runescape.wiki/w/Aberrant_spectre), $var[\lb]Deviant spectre$var[\rb](https://oldschool.runescape.wiki/w/Deviant_spectre), $var[\lb]Abhorrent spectre$var[\rb](https://oldschool.runescape.wiki/w/Abhorrent_spectre);no;1]
+
+$addField[<:Ironman:1426869294444052510> __**Ironman**__:;> __***DO***__ — Best for unique drops including herbs, elite clues, and shard progress.;no;1]
+
+$addField[📖 __**Summary**__:;Repugnant Spectres are Superior versions of Deviant Spectres, requiring 60 Slayer. They attack with Magic and drain Prayer, so always use a nose peg or Slayer helmet, and protect from magic. Found only in the Catacombs of Kourend, they offer top-tier loot and high XP.;no;1]
+
+$c[Footer]
+$thumbnail[https://oldschool.runescape.wiki/images/thumb/4/42/Repugnant_spectre.png/120px-Repugnant_spectre.png]
+$footerIcon[https://gyazo.com/eba1012515f77f8f231e1ecff813d27a.png;1]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#f44435]
+
+$addButton[no;https://oldschool.runescape.wiki/w/Repugnant_spectre;Wiki;link;;🖥️;]
+$addButton[no;CloseSDpage;Close Book;danger;;📔;]
+$endif
+
+
+$c[——— Abyssal Demon ——–]
+$if[$message==Abyssal demon]
+$title[Abyssal demon]
+$embeddedURL[https://oldschool.runescape.wiki/w/Abyssal_demon;1]
+$description[
+(Type:🟢 Standard)
+(Weight: 9):
+
+📜 __**Assigned by**__:
+> # <:Vannaka:1426868501666205706><:Chaeldar:1426868310527578142><:Konar:1426868344207839335><:Nieve:1426868418161676359><:Duradel:1426868326877106311>]
+
+$addField[📌 __**Location & Gear**__;> - $var[\lb]Catacombs of Kourend$var[\rb](https://oldschool.runescape.wiki/w/Catacombs_of_Kourend), $var[\lb]Slayer Tower$var[\rb](https://oldschool.runescape.wiki/w/Slayer_Tower), $var[\lb]Wilderness Slayer Cave$var[\rb](https://oldschool.runescape.wiki/w/Wilderness_Slayer_Cave), $var[\lb]Abyssal Area$var[\rb](https://oldschool.runescape.wiki/w/Abyssal_Area)
+> - Requires 85 Slayer
+> - Melee and Magic work — prayer optional for safety;no;1]
+
+$addField[💎 __**Drops & Variants**__;> - $var[\lb]Abyssal whip$var[\rb](https://oldschool.runescape.wiki/w/Abyssal_whip), $var[\lb]Abyssal dagger$var[\rb](https://oldschool.runescape.wiki/w/Abyssal_dagger), $var[\lb]Head$var[\rb](https://oldschool.runescape.wiki/w/Abyssal_head), $var[\lb]Clue scroll (hard)$var[\rb](https://oldschool.runescape.wiki/w/Clue_scroll_(Hard)), $var[\lb]Ensouled head$var[\rb](https://oldschool.runescape.wiki/w/Ensouled_abyssal_head)
+> - Variants: $var[\lb]Abyssal Sire$var[\rb](https://oldschool.runescape.wiki/w/Abyssal_Sire), $var[\lb]Greater abyssal demon$var[\rb](https://oldschool.runescape.wiki/w/Greater_abyssal_demon);no;1]
+
+$addField[<:Ironman:1426869294444052510> __**Ironman**__:;> __***DO***__ — Noteworthy for whip, dagger, and superior chance. Best for late-game gear progression.;no;1]
+
+$addField[📖 __**Summary**__:;Abyssal demons require 85 Slayer. Weak to melee and commonly barraged for efficiency in the Catacombs. Drop the valuable abyssal whip, essential for mid- and high-level accounts. Consider protection prayers for safety.;no;1]
+
+$c[Footer]
+$thumbnail[https://oldschool.runescape.wiki/images/thumb/c/c1/Abyssal_demon.png/120px-Abyssal_demon.png]
+$footerIcon[https://gyazo.com/eba1012515f77f8f231e1ecff813d27a.png;1]
+$footer[Requested by $nickname[$authorID] $addTimestamp]
+$color[#a8b83e]
+
+$addButton[no;https://oldschool.runescape.wiki/w/Abyssal_demon;Wiki;link;;🖥️;]
+$addButton[no;CloseSDpage;Close Book;danger;;📔;]
+$endif
+
+
+
+
+
+
+$c[═⋇═⋇═⋇═⋇═ ❧ ═⋇═⋇═⋇═⋇═]
+$botTyping
+$ignoreTriggerCase

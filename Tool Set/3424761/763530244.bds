@@ -1,0 +1,30 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.1 — © 2025 OSMays8338 | All Rights Reserved]
+$c[Portions of this script may include content from the OSRS Wiki under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSMays8338/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$botListHide
+
+$nomention
+$onlyForServers[1403455538460753940;I'm sorry but this command is only available for the Support server.]
+
+$deletecommand
+$onlyForRoles[Member;⛔️ Only Members can use this!]
+$title[🐛 Report a Bug 🐛]
+$description[
+> If you find any errors or something not responding correctly, please let us know. 
+
+> Include a description of the issue 
+> How to recreate the error
+> & 
+> A message link to the error message
+]
+
+
+$color[#A1D485]
+$thumbnail[https://gyazo.com/367b0ccae54b74529406d71dd696be95.png]
+$footer[Thank you]
+$addButton[no;bugs;Bug;success;no;:bug:]

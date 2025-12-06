@@ -1,0 +1,46 @@
+$nomention
+
+$botListHide
+$suppressErrorLogging
+$suppressErrors
+$onlyIf[$guildID!=;] 
+$cooldown[24d;]
+
+
+$if[$getServerVar[onInvite]==no]
+ $setServerVar[onInvite;yes]
+
+🛠️ **OLD SCHOOL TOOL SET HAS ARRIVED!**
+
+> ⚔️ *“Greetings, Adventurer! Word of your clan’s growing strength has reached even the far corners of Gielinor… and I’ve come to assist.”*
+
+I am **Old School Tool Set (OSTS)** — your all-in-one **OSRS-themed companion** for Discord.  
+Manage your clan, track progress, and relive the adventure with features forged in old-school spirit.
+
+
+### 🧭 **WHAT I CAN DO**
+> Tools crafted by the finest minds in Gielinor’s forges ⚒️
+
+🗡️ **Slayer Diaries** – Complete bestiary system with drops, tasks & Ironman notes  
+💰 **Economy System** – Earn, spend, and store gold through daily activities (`!coffer`, `!shop`, etc.)  
+⚒️ **Skill & Clan Tracking** – Compete in Skill of the Week and clan-wide leaderboards  
+🎁 **Quests & Events** – Add adventure to your server with OSRS-style challenges  
+🧩 **Customization Tools** – Manage ranks, rewards, and UI with full OSRS flavor  
+
+
+### ⚙️ **HOW TO BEGIN**
+> 🧙 *“A wise adventurer always prepares before battle…”*
+
+1️⃣ Run **`/setup`** – Start the guided setup to link your clan or personal profile  
+2️⃣ Choose your **channels** – Set where OSTS sends welcome, event, or slayer messages  
+3️⃣ Configure your **roles** – Assign ranks and permissions for your clan  
+4️⃣ Explore commands with **`/help`**
+
+
+Once setup is complete, your clan will unlock the full power of OSTS.  
+**May your drops be plentiful and your tasks efficient!** ⚔️
+
+
+$else
+
+$endif

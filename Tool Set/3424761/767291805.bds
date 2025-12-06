@@ -1,0 +1,46 @@
+$nomention 
+
+$enableDecimals[true]
+
+$c[WC data]
+ $var[WCvalue;$getUserVar[currentWCxp;$authorID]] $var[WCmax_value;$getUserVar[nextWClevelxp;$authorID]]
+ 
+$c[WC config]
+ $var[WCblank;⬛] $var[WCfilled;🟩] $var[WCbar_length;10] $c[:bangbang: "WCbar_length" can not be more than 10]
+
+$c[WC progress-bar-generator]
+ $var[WCpercent;$calculate[($var[WCvalue]*100)/$var[WCmax_value]]]
+ $var[WCbar;$replaceText[$repeatMessage[$var[WCbar_length];$var[WCblank]];$var[WCblank];$var[WCfilled];$round[$divide[$multi[$var[WCpercent];$var[WCbar_length]];100]]]]
+ 
+
+$c[M data]
+ $var[Mvalue;$getUserVar[currentMxp;$authorID]] $var[Mmax_value;$getUserVar[nextMlevelxp;$authorID]]
+ 
+$c[M config]
+ $var[Mblank;⬛] $var[Mfilled;🟫] $var[Mbar_length;10] $c[:bangbang: "Mbar_length" can not be more than 10]
+
+$c[M progress-bar-generator]
+ $var[Mpercent;$calculate[($var[Mvalue]*100)/$var[Mmax_value]]]
+ $var[Mbar;$replaceText[$repeatMessage[$var[Mbar_length];$var[Mblank]];$var[Mblank];$var[Mfilled];$round[$divide[$multi[$var[Mpercent];$var[Mbar_length]];100]]]]
+ 
+ 
+
+$title[$nickname[$authorID]'s Skill Levels]
+$description[
+You are **$var[WCpercent]%** through level **$getUserVar[WClevel;$authorID]**
+
+__**Woodcutting**__ - lvl **$getUserVar[WClevel;$authorID]** | **$var[WCpercent]%** 
+ **$var[WCbar]**
+ 
+ __**Mining**__ - lvl **$getUserVar[Mlevel;$authorID]** | **$var[Mpercent]%** 
+ **$var[Mbar]**
+ 
+ __**Fishing**__ - lvl **$getUserVar[WClevel;$authorID]** | **$var[WCpercent]%** 
+ **$var[WCbar]**
+
+]
+
+$thumbnail[$userAvatar[$authorID]]
+$color[$getRoleColor[$highestRole[$authorID]]]
+
+
