@@ -1,35 +1,52 @@
-Old School Tool Set License v1.1  
-Copyright © 2025 OSMays8338  
+Old School Tool Set License v1.2
+Copyright © 2025 OSMays8338
 All rights reserved.
 
-This project, including its original code, configuration files, BDS templates, wiki layout, API integrations, and custom-written documentation (collectively, the “Work”), is the intellectual property of OSMays8338 and is protected under applicable copyright laws.
+This project, including its original code, configuration files, BDS templates, wiki layout, custom API services, web frontend and backend components, and custom-written documentation (collectively, the “Work”), is the intellectual property of OSMays8338 and is protected under applicable copyright laws.​
 
+The Work includes, but is not limited to:
+
+The Old School Tool Set website (the “Website”), hosted at: TBD
+
+The Old School Tool Set API (the “OSTS API”), hosted at: https://osts-api.netlify.app/, including endpoints that retrieve, transform, cache, or display data and media sourced from third-party services (such as the Old School RuneScape Wiki and Wise Old Man)
+
+Third-party content and licenses
 Portions of this Work may incorporate or display content from the following third-party sources:
 
-- **Old School RuneScape Wiki** (https://oldschool.runescape.wiki), licensed under the Creative Commons Attribution-ShareAlike 3.0 license (CC BY-SA 3.0). Such content is provided under the terms of the CC BY-SA 3.0 license, and this License does not alter or restrict those terms.  
-  **Any text, data, or media sourced from the Old School RuneScape Wiki is distributed under the CC BY-SA 3.0 license. All other parts of this Work remain under the terms of this License.**  
-  Attribution to the OSRS Wiki and its contributors is hereby acknowledged.
+Old School RuneScape Wiki (https://oldschool.runescape.wiki), licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported license (CC BY-SA 3.0). Such content is provided under the terms of the CC BY-SA 3.0 license, and this License does not alter or restrict those terms.​
+Any text, data, images, icons, or other media sourced from the Old School RuneScape Wiki, whether used directly in the Work, the Website, or the OSTS API responses, together with any adaptations of such content, are licensed under CC BY-SA 3.0 (or a compatible CC BY-SA license as permitted by Creative Commons). All other parts of this Work remain under the terms of this License.​
+Attribution to the OSRS Wiki and its contributors is hereby acknowledged.​
 
-- **Wise Old Man API** (https://wiseoldman.net), an open API for RuneScape player and group tracking. The Old School Tool Set uses this API for data retrieval and display in compliance with its public usage policy. All Wise Old Man data remains the property of its respective creators and maintainers.
+Wise Old Man API (https://wiseoldman.net), an open API for RuneScape player and group tracking. The Old School Tool Set and the OSTS API use this API for data retrieval and display in compliance with its public usage policy. All Wise Old Man data remains the property of its respective creators and maintainers and is subject to any terms they specify.​
 
-- **Bot Designer For Discord** (.bds) scripts and environment are used for automated bot functionality and command processing. This project is not affiliated with, or endorsed by, Bot Designer For Discord.
+Bot Designer For Discord (.bds) scripts and environment are used for automated bot functionality and command processing. This project is not affiliated with, or endorsed by, Bot Designer For Discord.
 
-Old School RuneScape and related assets are trademarks and intellectual property of Jagex Ltd. This project is unaffiliated with, and not endorsed by, Jagex or the OSRS Wiki team. All rights to original game assets and official documentation are retained by their respective owners.
+Old School RuneScape and related assets are trademarks and intellectual property of Jagex Ltd. This project is unaffiliated with, and not endorsed by, Jagex or the OSRS Wiki team. All rights to original game assets and official documentation are retained by their respective owners.​
 
-Except where otherwise required by CC BY-SA 3.0 for incorporated OSRS Wiki content, permission is granted to view the Work for personal, non-commercial reference purposes only. No other rights are granted. Without the prior written consent of the copyright holder, you may not:
+Scope of this proprietary license
+Except for material that is (a) licensed under CC BY-SA 3.0 or another third-party license identified above, or (b) otherwise noted as being under a different license, the following terms apply to the Work:
 
-- Reproduce, copy, or redistribute any part of the Work;
-- Modify, adapt, translate, or create derivative works based on the Work;
-- Use the Work, in whole or in part, for any commercial or public-facing purpose;
-- Host, mirror, or publish the Work in any physical or digital medium, including wikis, websites, or repositories.
+Permission is granted to view the Work for personal, non-commercial reference purposes only.
 
-**Disclaimer of Warranty:**  
-THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.  
+No other rights are granted. Without the prior written consent of the copyright holder, you may not:
+
+Reproduce, copy, or redistribute any proprietary part of the Work, the Website, or the OSTS API (including its proprietary source code, proprietary documentation, or compiled assets);
+
+Modify, adapt, translate, or create derivative works based on the proprietary parts of the Work, the Website, or the OSTS API;
+
+Use the proprietary parts of the Work, in whole or in part, for any commercial or public-facing purpose;
+
+Host, mirror, or publish the proprietary parts of the Work, in whole or in part, in any physical or digital medium, including wikis, websites, or repositories.
+
+Nothing in this License is intended to, or may be interpreted to, limit or restrict the rights granted by the CC BY-SA 3.0 license (or any other applicable third-party license) with respect to OSRS Wiki content or any adaptations or collections that include such content. To the extent there is any conflict, the terms of the applicable third-party license (including CC BY-SA 3.0 for OSRS Wiki content) control for that material.​
+
+Disclaimer of Warranty
+THE WORK (INCLUDING THE WEBSITE AND THE OSTS API) IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.​
 IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM OR IN CONNECTION WITH THE WORK OR THE USE OR OTHER DEALINGS IN THE WORK.
 
-For licensing requests, permissions, or other inquiries, contact:  
+For licensing requests, permissions, or other inquiries, contact:
 https://github.com/OSMays8338
 
 ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
-SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.1 AND CC-BY-SA-3.0
+SPDX-License-Identifier: LicenseRef-OSMays8338-OSTS-1.2 AND CC-BY-SA-3.0
 ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
