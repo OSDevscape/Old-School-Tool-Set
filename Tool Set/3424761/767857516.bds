@@ -1,0 +1,36 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.2 — © 2025 OSDevscape | All Rights Reserved]
+$c[OSRS Wiki–derived text and media used here are licensed separately under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSDevscape/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSDevscape-OSTS-1.2 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$c[SET RSN COMMAND]
+
+$onlyForRoles[Owner;Deputy Owner;Cabinet;❌ I'm sorry but you need to be apart of the Cabinet to use this command.]
+
+
+$nomention
+
+$c[Footer]
+$thumbnail[$userAvatar[$mentioned[1]];1]
+$footer[$addTimestamp]
+$color[#D8A63B] 
+
+$c[Set Variable]
+$setVar[RSN;$message[2];$mentioned[1]]
+
+<@$mentioned[1]>
+
+
+$c[Body]
+$title[Update Successful]
+$description[ 
+Thank you **$nickname[$authorID]** for providing **$username[$mentioned[1]]** Account's Name.
+
+> They will now be known as:
+> ***$getVar[RSN;$mentioned[1]]***
+]
+
+$changeUsernameWithID[$mentioned[1];$getVar[RSN;$mentioned[1]]] 

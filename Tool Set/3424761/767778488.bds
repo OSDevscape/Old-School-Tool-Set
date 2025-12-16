@@ -1,0 +1,40 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.2 — © 2025 OSDevscape | All Rights Reserved]
+$c[OSRS Wiki–derived text and media used here are licensed separately under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSDevscape/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSDevscape-OSTS-1.2 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+ 
+$httpAddHeader[api-Key;$getVar[WomKey]]
+$httpAddHeader[Content-Type;application/json]
+
+
+$if[$isSlash==true] 
+
+$c[POST API CALL]
+$httpPost[$getVar[postCall]/$getVar[RSN;$authorID];{}] 
+$title[Wise Old Man Profile]
+$description[$if[$httpStatus==200]
+### **$getVar[RSN;$authorID]**, 
+Your account has been updated
+
+$elseif[$httpStatus==400]
+> Something seems to be wrong
+> __**Status**__: **400**
+
+Your Account has possibly been updated recently and is not allowing it to be updated again.
+
+Please try again in a %time%
+$endif 
+
+$color[#151AB1]
+$thumbnail[https://gyazo.com/4dbc236de1c71dfeb7c875ffb14a78c7.png]
+
+]
+
+$cooldown[1h;To keep the Rate Limit down, we have a 1hr cooldown. You have %time% left before you can update again]
+$endif 
+ 
