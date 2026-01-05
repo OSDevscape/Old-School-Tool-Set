@@ -41,7 +41,7 @@ Website & Discord bot
 <details>
   <summary><b>Utilities</b></summary>
   <p align="center">
-    ### __Features Include__:
+    ### __Features Include__:<br>
 • Server Owner Setup Guide<br>
 • Clan Configuration Setup Guide <br> 
 • Moderation
