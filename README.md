@@ -41,16 +41,21 @@ Website & Discord bot
 <details>
   <summary><b>Utilities</b></summary>
   <p align="center">
-    • Server Owner Commands<br>
-    • Server Setup Guide<br>
-    • Server Moderation<br>
-    • Clan Resources `[powered by W.O.M.]`<br>
-    • Chat Leveling System<br>
-    • Economy System<br>
-    • Bank<br>
-    • Store<br>
-    • Tag System<br><br>
-    • Custom Prefix<br><br>
+    ### __Features Include__:
+• Server Owner Setup Guide<br>
+• Clan Configuration Setup Guide <br> 
+• Moderation
+• Clan Member Only Cmds <br>
+• Guest Only Cmds <br>
+• Chat Lvling System<br>
+• Economy System<br>
+• Store<br>
+• Bank<br>
+• Tag System<br>
+• Poll System<br>
+• EotW Poll System<br>
+• In Server - Skilling (🪓, 🎣, ⛏️)<br>
+• Bot Voting — Top.gg
   </p>
 </details>
 
