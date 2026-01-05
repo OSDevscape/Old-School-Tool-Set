@@ -83,7 +83,7 @@ Whether you're looking for the best places to hunt, notable loot, or necessary p
 
 **Old School Tool Set (OSTS)** makes use of the following community resources and services:
 
-- 🧠 **[Wise Old Man API](https://docs.wiseoldman.net/api)** — for player, group, and competition data.  
+- 🧠 **[TempleOSRS API](https://templeosrs.com/api_doc.php)** — for player, group, and competition data.  
 - 🛠️ **[Old School Tool Set API](https://osts.website/API/overview)** — custom endpoints for Slayer diaries, clan utilities, and ranking tools.  
 - 📚 **[Old School RuneScape Wiki](https://oldschool.runescape.wiki)** — content provided under the **CC BY-SA 3.0** license.  
 - 🤖 **[Bot Designer For Discord](https://botdesignerdiscord.com)** — for bot scripting and automation.  
