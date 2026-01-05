@@ -53,7 +53,7 @@ Website & Discord bot
 • Tag System<br>
 • Poll System<br>
 • EotW Poll System<br>
-• In Server - Skilling (🪓, 🎣, ⛏️)<br>
+• In Server — Skilling (🪓, 🎣, ⛏️)<br>
 • Bot Voting — Top.gg
   </p>
 </details>
