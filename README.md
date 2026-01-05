@@ -43,7 +43,7 @@ Website & Discord bot
   <p align="center">
 • Server Owner Setup Guide<br>
 • Clan Configuration Setup Guide <br> 
-• Moderation
+• Moderation<br>
 • Clan Member Only Cmds <br>
 • Guest Only Cmds <br>
 • Chat Lvling System<br>
