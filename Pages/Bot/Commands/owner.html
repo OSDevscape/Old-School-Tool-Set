@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Owner Commands</title>
+
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="canonical" href="/Bot/Commands/owner" />
+
+  <meta property="og:title" content="Old School Tool Set" />
+  <meta property="og:description" content="Owner-only commands for the Old School Tool Set Discord bot." />
+  <meta property="og:image" content="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png" />
+  <meta property="og:url" content="https://osts.website/Bot/Commands/owner" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Owner Commands" />
+  <meta name="twitter:description" content="Owner-only controls for the Old School Tool Set bot." />
+  <meta name="twitter:image" content="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png" />
+</head>
+
+<body class="back-header">
+  <header>
+    <button class="back-btn" onclick="window.location.href='/index.html'">
+  ⬅ Back
+</button>
+
+
+    <button class="copy-link" title="Copy page link" onclick="copyCurrentUrl(event)">
+      <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png"
+           alt="Copy link" width="24" height="24">
+    </button>
+  </header>
+
+  <div class="wrapper">
+    <h1>Owner Commands</h1>
+    <p class="hero-text">
+      These commands are restricted to the bot owner and are not visible to regular users.
+    </p>
+
+    <div class="panel">
+      <h3>Core owner controls</h3>
+      <ul class="feature-list">
+        <li><code>!shutdown</code> – Safely shut down the bot instance.</li>
+        <li><code>!eval &lt;code&gt;</code> – Run owner‑only evaluation snippets.</li>
+        <li><code>!reload &lt;module&gt;</code> – Reload a command module without restarting.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>Security &amp; overrides</h3>
+      <ul class="feature-list">
+        <li><code>!blacklist &lt;user&gt;</code> – Block a user from using any commands.</li>
+        <li><code>!whitelist &lt;user&gt;</code> – Allow a user to bypass certain checks.</li>
+        <li><code>!sudo &lt;user&gt; &lt;command&gt;</code> – Run a command as another user.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 OSDevscape — All Rights Reserved.
+  </footer>
+
+  <div id="copy-toast">Link copied!</div>
+
+  <script src="/main.js"></script>
+</body>
+</html>

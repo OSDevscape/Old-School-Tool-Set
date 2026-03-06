@@ -1,8 +1,2 @@
-# Ignore Visual Studio Code workspace settings
-.vscode/
-
-# Ignore the root-level Images folder (local assets, screenshots, etc.)
-/Images/
-
-# Ignore the root-level Templates folder (project templates)
-/Templates/
+# Ignore the root-level Asset folder
+/Assets/

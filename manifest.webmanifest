@@ -1,0 +1,22 @@
+{
+  "name": "Old School Tool Set",
+  "short_name": "OSTS",
+  "description": "Old School Tool Set Bot, API, and tools for OSRS clans.",
+  "start_url": "/OSTS/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#2b2620",
+  "theme_color": "#2b2620",
+  "icons": [
+    {
+      "src": "OSTS/API/Assets/Logo/OSTS_Logo-192X192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "OSTS/API/Assets/Logo/OSTS_Logo-512X512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

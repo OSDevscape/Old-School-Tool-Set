@@ -1,0 +1,295 @@
+/* ========== Base layout ========== */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;                 /* for flex layout */
+}
+
+body {
+  background-color: #3c3c3c;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  display: flex;                /* make footer stick */
+  flex-direction: column;
+}
+
+/* main content wrapper */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+  flex: 1;                      /* take remaining height */
+}
+
+/* ========== Map header + overlay buttons ========== */
+
+.site-header {
+  width: 100%;
+}
+
+/* OSRS map image */
+.header {
+  background: url("https://i.gyazo.com/d128d60ba90131d10a2a5a8c5235eb44.jpeg")
+    no-repeat center center;
+  background-size: 100% 100%;
+  height: 230px;          /* space for map + buttons */
+  width: 100%;
+  position: relative;     /* allow absolute children */
+  overflow: hidden;
+}
+
+/* Shared header button styles */
+.header .back-btn,
+.header .copy-link {
+  position: absolute;
+  top: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(0, 0, 0, 0.65);
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  z-index: 2;
+  font-size: 0.9rem;
+}
+
+/* Back button – top-left */
+.header .back-btn {
+  left: 8px;
+}
+
+/* Copy icon – top-right */
+.header .copy-link {
+  right: 8px;
+}
+
+.header .copy-link img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+/* ========== Profile section (overlaps bottom of map) ========== */
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0;
+  padding-left: 15px;
+  position: relative;
+  z-index: 1;             /* above map, below buttons */
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  background: url("https://gyazo.com/9394d89005e53b37d2c8ec6f71662897.png")
+    no-repeat center;
+  background-size: cover;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.profile-text {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.profile-text h1 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.8em;
+  color: #94731D;
+  text-shadow: 0 0 1px #94731D, 0 0 20px #B89225;
+  margin: 0;
+}
+
+.profile-text p {
+  font-size: 1.1em;
+  margin: 5px 0 15px;
+}
+
+/* ========== Link boxes ========== */
+
+.link-box {
+  border: 2px solid #3c3c3c;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.link-box h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.link-box h3 {
+  margin: 0 0 8px;
+  color: #94731D;
+}
+
+/* Button list */
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual link button */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto;
+  width: 250px;
+  padding: 10px 20px;
+  background-color: #2b2b2b;
+  border: 2px solid #94731D;
+  border-radius: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.05em;
+  transition: background 0.3s;
+}
+
+.button img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.button:hover {
+  background-color: #444444;
+}
+
+/* ========== GitHub Footer Icon ========== */
+
+.github-footer-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* center icon horizontally */
+  margin: 12px 0 25px;        /* gap above/below icon */
+}
+
+.github-footer-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.github-footer-icon:hover {
+  color: #B89225;
+  transform: scale(1.15);
+}
+
+/* ========== Footer ========== */
+
+.footer {
+  width: 100%;
+  background-color: #2b2b2b;
+  color: #B89225;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
+  border-top: 1px solid #B89225;
+}
+
+/* ========== Install banner (PWA) ========== */
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#install-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2b2b2b;
+  color: white;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #94731D;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.4s ease-out;
+  box-sizing: border-box;
+}
+
+#install-banner.hidden {
+  display: none;
+}
+
+#install-banner span {
+  font-size: 0.95em;
+  flex-grow: 1;
+  padding-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.install-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+#install-banner #install-btn,
+#install-banner .dismiss-btn {
+  background-color: #2b2b2b;
+  color: white;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  max-height: 32px;
+}
+
+#install-banner #install-btn:hover,
+#install-banner .dismiss-btn:hover {
+  background-color: #444444;
+}
+
+.dismiss-btn {
+  padding: 4px 8px;
+  font-size: 1em;
+  line-height: 1;
+}
+
+/* ========== Small screens ========== */
+
+@media (max-width: 480px) {
+  .button {
+    width: 220px;
+    font-size: 1em;
+  }
+
+  .profile-section {
+    margin-top: -60px; /* slightly reduced overlap on very small screens */
+  }
+}

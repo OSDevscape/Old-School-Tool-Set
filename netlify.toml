@@ -1,0 +1,49 @@
+# 1) Static legal pages
+[[redirects]]
+from = "/license"
+to = "/OSTS/Legal/license.html"
+status = 200
+
+[[redirects]]
+from = "/terms"
+to = "/OSTS/Legal/terms.html"
+status = 200
+
+# 2) API static files (overview, JSON, assets)
+[[redirects]]
+from = "/OSTS/API/overview.html"
+to = "/OSTS/API/overview.html"
+status = 200
+
+[[redirects]]
+from = "/OSTS/API/v1/Clan/Rank/icons.json"
+to = "/OSTS/API/v1/Clan/Rank/icons.json"
+status = 200
+
+[[redirects]]
+from = "/OSTS/API/Assets/*"
+to = "/OSTS/API/Assets/:splat"
+status = 200
+
+[[redirects]]
+from = "/OSTS/API/v1/Slayer_Diaries/Monster/Entries/*"
+to = "/OSTS/API/v1/Slayer_Diaries/Monster/Entries/:splat"
+status = 200
+
+[[redirects]]
+from = "/OSTS/API/v1/Slayer_Master/Head/icons.json"
+to = "/OSTS/API/v1/Slayer_Master/Head/icons.json"
+status = 200
+
+# 3) API gateway (dynamic API calls only)
+[[redirects]]
+from = "/OSTS/API/*"
+to = "/OSTS/.netlify/functions/api-gateway"
+status = 200
+
+# 4) Custom 404 page (catch‑all)
+[[redirects]]
+from = "/OSTS/index.html*"
+to = "/OSTS/Pages/404.html"
+status = 404
+

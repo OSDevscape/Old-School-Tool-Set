@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OSTS Discord · Old School Tool Set</title>
+  
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#2b2620">
+  
+  <link rel="canonical" href="/discord.html" />
+  
+  <meta property="og:title" content="OSTS Discord Server" />
+  <meta property="og:description" content="Join the Old School Tool Set Discord community for support, OSRS clan discussions, and bot updates." />
+  <meta property="og:image" content="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png" />
+  <meta property="og:url" content="https://osts.website/discord.html" />
+  <meta property="og:type" content="website" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="OSTS Discord Server" />
+  <meta name="twitter:description" content="Join the Old School Tool Set Discord community for support, OSRS clan discussions, and bot updates." />
+  <meta name="twitter:image" content="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png" />
+  
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker
+        .register('/service-worker.js')
+        .catch(console.error);
+    });
+  }
+</script>
+
+<body class="home-page">
+  <header>
+  <button class="back-btn" onclick="window.location.href='/index.html'">⬅ Back</button>
+</header>
+  
+  <div class="wrapper">
+    <img src="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png" alt="Old School Tool Set Logo" class="logo" />
+    
+    <h1>Support Server</h1>
+    <p class="hero-text">
+      Join our community for real-time support, Suggestions, Bug Reports, and Feature Requests.
+    </p>
+    
+    <div class="pill-row">
+      <div class="pill">Live Troubleshooting</div>
+      <div class="pill">Bot support</div>
+      <div class="pill">OSRS discussions</div>
+    </div>
+    
+    <!-- Discord Widget - Replace YOUR_SERVER_ID with your actual Discord server ID -->
+    <div class="panel discord-widget-container">
+      <iframe 
+        src="https://discord.com/widget?id=1398976009214230630&theme=dark" 
+        width="100%" 
+        height="600" 
+        allowtransparency="true" 
+        frameborder="0" 
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+      </iframe>
+    </div>
+    
+    <div class="panel">
+      <h3>What's in the server</h3>
+      <ul class="feature-list">
+        <li>Bot support channels with live troubleshooting.</li>
+        <li>Command Previews</li>
+        <li>API feedback and feature requests.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <footer>
+    © 2025 OSDevscape — All Rights Reserved.
+  </footer>
+  
+  <div id="copy-toast">Link copied!</div>
+  
+  <script src="/OSTS/main.js"></script>
+</body>
+
+</html>

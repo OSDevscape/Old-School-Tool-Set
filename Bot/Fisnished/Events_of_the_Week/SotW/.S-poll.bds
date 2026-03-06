@@ -1,0 +1,28 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.2 — © 2025 OSDevscape | All Rights Reserved]
+$c[OSRS Wiki–derived text and media used here are licensed separately under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSDevscape/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSDevscape-OSTS-1.2 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+$onlyForRoles[Owner;Deputy Owner;> I do apologize, but unfortunately the Owner and Deputy Owners are the only ones able to use this command.]
+
+$var[embed_color;$getServerVar[color]]
+$deletecommand
+
+
+$title[Next SotW Choices]
+$description[$message]
+$footer[Asked by $nickname[$authorID]]
+$thumbnail[https://gyazo.com/8ddb94e5a3ebe73f845ba75d1fb0b3b3.png]
+$color[$var[embed_color]]
+
+$addButton[no;skill1-0-0-0-0-0;1️⃣ 0%;success]
+$addButton[no;skill2-0-0-0-0-0;2️⃣ 0%;success]
+$addButton[no;skill3-0-0-0-0-0;3️⃣ 0%;success]
+$addButton[no;skill4-0-0-0-0-0;4️⃣ 0%;success]
+$addButton[no;votes;0 votes;secondary;yes]
+
+ 

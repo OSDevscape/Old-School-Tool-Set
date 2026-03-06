@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>API Overview</title>
+
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#2b2620">
+
+  <link rel="canonical" href="/API/overview" />
+
+  <meta property="og:title" content="Old School Tool Set API" />
+  <meta property="og:description" content="JSON API for Slayer Diaries, clan ranks, and Slayer Masters data used by the Old School Tool Set bot." />
+  <meta property="og:image" content="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png" />
+  <meta property="og:url" content="https://osts.website/API/overview" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Old School Tool Set API" />
+  <meta name="twitter:description" content="Endpoints for clans, Slayer Diaries, and Slayer Masters." />
+  <meta name="twitter:image" content="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png" />
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker
+        .register('/service-worker.js')
+        .catch(console.error);
+    });
+  }
+</script>
+
+<body class="api-page back-header">
+  <header>
+    <button class="back-btn" onclick="window.location.href='/index.html'">⬅ Back</button>
+
+    <button class="copy-link" title="Copy page link" onclick="copyCurrentUrl(event)">
+      <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png"
+           alt="Copy link" width="24" height="24">
+    </button>
+  </header>
+
+  <div class="wrapper">
+    <img src="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png"
+         alt="Old School Tool Set Logo" class="logo" />
+
+    <h1>OSTS API</h1>
+    <p class="hero-text">
+      A JSON API companion for <strong>Old School Tool Set</strong>, exposing Slayer Diaries Monster Entries,
+      Slayer Masters, and Clan Rank data for the bot.
+    </p>
+
+    <div class="pill-row">
+      <div class="pill">Version: v1</div>
+      <div class="pill">Format: JSON only</div>
+      <div class="pill">Base URL: <code>/API/v1/</code></div>
+    </div>
+
+    <div class="panel">
+      <h3>Quickstart</h3>
+      <p><strong>Base URL:</strong> <code>https://osts.website/API/v1/</code></p>
+      <p>Try these example calls from your terminal or code:</p>
+      <pre><code># Clan rank icons
+curl https://osts.website/API/v1/Clan/Rank/icons.json
+
+# Slayer diary entry (monster slug)
+curl https://osts.website/API/v1/Slayer_Diaries/Monster/Entries/Aberrant_spectre.json
+
+# Slayer master portraits
+curl https://osts.website/API/v1/Slayer_Master/Head/icons.json
+</code></pre>
+    </div>
+
+    <div class="panel">
+      <h3>Core endpoints</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Endpoint</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span class="method">GET</span>
+              <button class="copy-endpoint"
+                      data-url="https://osts.website/API/v1/Clan/Rank/icons.json"
+                      data-message="Ranks Endpoint Copied">
+                <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png"
+                     alt="Copy endpoint" width="18" height="18">
+              </button>
+            </td>
+            <td class="endpoint">/API/v1/Clan/Rank/icons.json</td>
+            <td>Clan rank icons and basic metadata.</td>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="method">GET</span>
+              <button class="copy-endpoint"
+                      data-url="https://osts.website/API/v1/Slayer_Diaries/Monster/Entries/{name}.json"
+                      data-message="Monster Entry Endpoint Copied">
+                <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png"
+                     alt="Copy endpoint" width="18" height="18">
+              </button>
+            </td>
+            <td class="endpoint">/API/v1/Slayer_Diaries/Monster/Entries/&lt;name&gt;.json</td>
+            <td>Per‑monster Slayer diary entries, keyed by slug name.</td>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="method">GET</span>
+              <button class="copy-endpoint"
+                      data-url="https://osts.website/API/v1/Slayer_Master/Head/icons.json"
+                      data-message="Master&#39;s Heads Endpoint Copied">
+                <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png"
+                     alt="Copy endpoint" width="18" height="18">
+              </button>
+            </td>
+            <td class="endpoint">/API/v1/Slayer_Master/Head/icons.json</td>
+            <td>Slayer master portraits.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h3>Responses &amp; usage</h3>
+      <p>
+        All endpoints return UTF‑8 JSON. Successful calls respond with HTTP <code>200</code>;
+        unknown resources respond with a structured <code>404</code> JSON error.
+      </p>
+      <p>
+        Designed to be friendly to Discord bots and web overlays:
+        no authentication, versioned under <code>/API/v1/</code>, and served from Netlify’s CDN edge.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 OSDevscape — All Rights Reserved.
+  </footer>
+
+  <div id="copy-toast">Link copied!</div>
+
+  <script src="/OSTS/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const buttons = document.querySelectorAll('.copy-endpoint');
+      const toast = document.getElementById('copy-toast');
+
+      function handleEndpointCopy(e) {
+        e.stopPropagation();
+        const btn = e.currentTarget;
+        const url = btn.getAttribute('data-url');
+        const message = btn.getAttribute('data-message') || 'Link copied!';
+
+        const doToast = () => {
+          if (!toast) return;
+          toast.textContent = message;
+          toast.classList.add('show');
+          setTimeout(() => {
+            toast.classList.remove('show');
+            toast.textContent = 'Link copied!';
+          }, 1500);
+        };
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(url).then(() => {
+            doToast();
+            btn.classList.remove('flash');
+            void btn.offsetWidth;
+            btn.classList.add('flash');
+            btn.blur();
+          }).catch(() => {
+            doToast();
+          });
+        } else {
+          const textArea = document.createElement('textarea');
+          textArea.value = url;
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textArea);
+          doToast();
+          btn.classList.remove('flash');
+          void btn.offsetWidth;
+          btn.classList.add('flash');
+          btn.blur();
+        }
+      }
+
+      buttons.forEach(btn => btn.addEventListener('click', handleEndpointCopy));
+    });
+  </script>
+</body>
+</html>

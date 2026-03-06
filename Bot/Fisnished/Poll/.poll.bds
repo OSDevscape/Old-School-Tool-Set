@@ -1,0 +1,22 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[Old School Tool Set License v1.2 — © 2025 OSDevscape | All Rights Reserved]
+$c[OSRS Wiki–derived text and media used here are licensed separately under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSDevscape/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────] 
+$c[SPDX-License-Identifier: LicenseRef-OSDevscape-OSTS-1.2 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+$onlyAdmin[> I do apologize, but unfortunately Admin are the only one able to use this command.]
+
+$var[embed_color;$getServerVar[color]]
+$deletecommand
+
+
+$title[New poll]
+$description[$message]
+$footer[Asked by $username#$discriminator[$authorID]]
+$color[$var[embed_color]]
+$addButton[no;upvote-0-0-0;⬆️ 0%;primary]
+$addButton[no;downvote-0-0-0;⬇️ 0%;primary]
+$addButton[no;votes;0 votes;secondary;yes]

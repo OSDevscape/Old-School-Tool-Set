@@ -1,0 +1,59 @@
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+$c[Old School Tool Set License v1.2 — © 2025 OSDevscape | All Rights Reserved]
+$c[OSRS Wiki–derived text and media used here are licensed separately under CC BY-SA 3.0]
+$c[For full license details, see: https://github.com/OSDevscape/Old-School-Tool-Set/blob/main/LICENSE]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+$c[SPDX-License-Identifier: LicenseRef-OSDevscape-OSTS-1.2 AND CC-BY-SA-3.0]
+$c[─────────────────────────────────────────────────────────────────────────────────────────────────────]
+
+$nomention
+$if[$message[sotw]==true]
+$title[SotW Sign ups]
+$description[**$getUserVar[RSN;$authorID]**,
+Thank you for signing up for both events.
+
+Someone will ping you shortly to collect the Entry Fees, please be at the Clan Hall Bank on W419]
+
+$color[#2ecb70]
+$thumbnail[https://gyazo.com/8ddb94e5a3ebe73f845ba75d1fb0b3b3.png]
+
+$sendEmbedMessage[1452012423975403706;Content;SotW Sign up Request;;Description;#2ecb70;;;Footer;;$userAvatar[$authorID];$message[proof];yes;no]
+$endif
+
+$if[$message[botw]==true]
+$title[BotW Sign ups]
+$description[**$getUserVar[RSN;$authorID]**,
+Thank you for signing up for the Boss of the Week event.
+
+Someone will ping you shortly to collect the Entry Fees, please be at the Clan Hall Bank on W419]
+
+$color[#e64d3c]
+$thumbnail[https://gyazo.com/d00e215043ff6d39399e9f76a0f8e133.png]
+
+$sendEmbedMessage[1452012423975403706;Content;SotW Sign up Request;;Description;#e64d3c;;;Footer;;$userAvatar[$authorID];;yes;no]
+$endif
+
+$if[$message[both]==true]
+$title[Eotw Sign ups]
+$description[$getUserVar[RSN;$authorID],
+Thank you for signing up for both events.
+
+Someone will ping you shortly to collect the Entry Fees, please be at the Clan Hall Bank on W419]
+
+$color[#9b59b6]
+$thumbnail[https://gyazo.com/2d3d3866e64644b0ef945e44640fb57c.png]
+
+$sendEmbedMessage[1452012423975403706;Content;Both EotW Sign up Request;;Description;#9b59b6;;;Footer;;$userAvatar[$authorID];;yes;no]
+$endif
+
+$if[$message[proof]==true]
+$title[Eotw Sign ups]
+$description[$getUserVar[RSN;$authorID],
+Thank you for proof of your Entry fee for the events.
+]
+
+$color[#9b59b6]
+$thumbnail[https://gyazo.com/2d3d3866e64644b0ef945e44640fb57c.png]
+
+$sendEmbedMessage[1452012423975403706;Content;Entry fee Proof;;Description - $message[proof];#9b59b6;;;Footer;;$userAvatar[$authorID];$message[proof];yes;no]
+$endif
